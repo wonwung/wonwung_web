@@ -6,51 +6,59 @@
     <title>Document</title>
   </head>
   <style>
-    fieldset{
-        width: 300px;
-        height: auto;
-        border-color: rgb(63, 53, 41);
-        border-style: double;
+    fieldset {
+      width: 300px;
+      height: auto;
+      border-color: rgb(63, 53, 41);
+      border-style: double;
     }
-    legend
-    { background-color: black;
-        color: aliceblue; }
+    legend {
+      background-color: black;
+      color: aliceblue;
+    }
   </style>
   <body>
     <p>
       고객명 : <input type="text" name="name" /> <br />
       전화번호 : <input type="text" name="tell" /> <br />
       E-mail : <input type="text" name="email" /> <br />
+    </p>
 
-      <fieldset>
-        <legend>피자 사이즈</legend> <br>
-        <input type="radio" name="size" id="Small" value="Small" />
-        <label for="Small">Small</label><br />
+    <fieldset>
+      <legend>피자 사이즈</legend>
+      <br />
+      <input type="radio" name="size" id="Small" value="Small" />
+      <label for="Small">Small</label><br />
 
-        <input type="radio" name="size" id="Medium" value="Medium" />
-        <label for="Medium">Medium</label><br />
+      <input type="radio" name="size" id="Medium" value="Medium" />
+      <label for="Medium">Medium</label><br />
 
-        <input type="radio" name="size" id="Large" value="Large" />
-        <label for="Large">Large</label><br />
-      </fieldset>
-      <fieldset>
-        <legend>토핑 선택</legend>
-        <br />
-        <input type="radio" name="toping" id="베이컨" value="ㅇㅇ" />
-        <label for="베이컨">베이컨</label><br />
+      <input type="radio" name="size" id="Large" value="Large" />
+      <label for="Large">Large</label><br />
+    </fieldset>
+    <fieldset>
+      <legend>토핑 선택</legend>
+      <br />
+      <input type="radio" name="toping" id="베이컨" value="ㅇㅇ" />
+      <label for="베이컨">베이컨</label><br />
 
-        <input type="radio" name="toping" id="치즈" value="ㅇㅇ" />
-        <label for="치즈">치즈</label><br />
+      <input type="radio" name="toping" id="치즈" value="ㅇㅇ" />
+      <label for="치즈">치즈</label><br />
 
-        <input type="radio" name="toping" id="양파" value="ㅇㅇ" />
-        <label for="양파">양파</label><br />
+      <input type="radio" name="toping" id="양파" value="ㅇㅇ" />
+      <label for="양파">양파</label><br />
 
-        <input type="radio" name="toping" id="버섯" value="ㅇㅇ" />
-        <label for="버섯">버섯</label><br>
-      </fieldset>
+      <input type="radio" name="toping" id="버섯" value="ㅇㅇ" />
+      <label for="버섯">버섯</label><br />
+    </fieldset>
 
-      <p>희망배송시간 : <input type="time" /> </p>
-      배송시 요청사항: <textarea name="needs" rows="2" cols="10"></textarea>
+    <p>희망배송시간 : <input type="time" /></p>
+    배송시 요청사항: <textarea name="needs" rows="2" cols="10"></textarea>
+    <br />
+    <input type="submit" value="주문하기" />
+    <input type="reset" value="다시 선택" />
+    <form name="input" action="geid.jsp" method="get">
+      <br />
     </form>
   </body>
 </html>
