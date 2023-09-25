@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>패스워드: <input type="password" name="pass" /></form>
+
+    <form>
+      <input type="radio" name="gender" value="male" />남성
+      <input type="radio" name="gender" value="female" />여성
+    </form>
+    <form>
+      과일선택:
+      <input type="checkbox" name="fruits" value="apple" checked />Apple
+      <input type="checkbox" name="fruits" value="grape" />Grape
+      <input type="checkbox" name="fruits" value="orange" />Orange
+    </form>
+    <br />
+    <form name="input" action="getid.jsp" method="get">
+      사용자 아이디:
+      <input type="test" name="user" /><br />
+      <input type="submit" value="제출" />
+      <input type="reset" value="=초기화" />
+      <form name="input" action="geid.jsp" method="get">
+        <input type="text" name="name" /><br />
+        <br />
+        <input
+          type="image"
+          src="../resources/Img/버튼.jpg"
+          width="50px"
+          height="50px"
+          alt="제출버튼"
+        />
+      </form>
+    </form>
+    <br />
+    <form enctype="multipart/form-data">
+      <input type="file" accept="image/jpeg,image/gif" />
+    </form>
+    -히든태그 <input type="hidden" name="hiddenTag" value="히든태그입니다." />
+    <br /><br />
+    <form action="input.jsp" method="post">
+      이메일: <input type="=email" name="email" /><br />
+      URL: <input type="url" name="url" /><br />
+      전화번호:
+      <input
+        type="tel"
+        name="tel"
+        required
+        placeholder="010-0000-0000"
+        pattern="[0-9]{3}[0-9]{4}[0-9]{4}"
+        title="010-0000-0000"
+      />
+      <input type="submit" value="Send" /><br />
+      색상: <input type="color" name="color" /><br />
+      월: <input type="month" name="month" /><br />
+      날짜: <input type="week" name="week" /><br />
+      주: <input type="date" name="date" /><br />
+      시간: <input type="time" name="time" /><br />
+      지역시간: <input type="datetime-local" name="localdatetime" /><br />
+      숫자:
+      <input
+        type="number"
+        name="number"
+        min="0"
+        max="10"
+        step="1"
+        maxlength="4"
+      /><br />
+      범위: <input type="range" name="range" min="1" max="100" step="2" /><br />
+      <input type="submit" value="제출" />
+    </form>
+  </body>
+</html>
