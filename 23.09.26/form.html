@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>납품자정보</legend>
+        <p>
+          1. 납품자명 : <input type="text" name="name" placeholder="홍길동" />
+        </p>
+        <p>2.E-mail : <input type="email" name="e-mail" /></p>
+        <p>3. 홈페이지 : <input type="URL" name="homepage" /></p>
+      </fieldset>
+
+      <fieldset>
+        <legend>납품정보</legend>
+        <ul>
+          <li>납품명 : <input type="text" name="name" required /></li>
+          <br />
+          <li>
+            납품수량 :<input
+              type="number"
+              name="number"
+              min="0"
+              max="100"
+              step="1"
+              maxlength="4"
+              required
+            />
+          </li>
+          <br />
+          <li>
+            납품등급 :
+            <input
+              type="range"
+              name="range"
+              min="1"
+              max="100"
+              step="2"
+              required
+            />
+          </li>
+          <br />
+          <li>
+            기타사항 :
+            <textarea name="needs" rows="2" cols="20" required></textarea>
+          </li>
+          <br />
+        </ul>
+        <input type="submit" value="Send message" />
+      </fieldset>
+    </form>
+  </body>
+</html>

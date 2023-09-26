@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <form>
+      <fieldset>
+        <legend>필수 입력 사항</legend>
+        ID
+        <input type="text" name="ID" placeholder="아이디 10글자 이내" />
+        <input type="submit" value="중복 확인" /> <br />
+        비밀번호
+        <input
+          type="password"
+          name="PW"
+          placeholder="영문,숫자,특수문자 포함 8자 이상"
+        /><br />
+        비밀번호 확인 <input type="password" name="PW" /><br />
+        E-mail <input type="url" name="URL" />
+        <select name="E-mail" size="1" required>
+          <option value="선택">직접 입력</option>
+          <option value="네이버">@naver.com</option>
+          <option value="다음">@daum.net</option>
+          <option value="한메일">@hanmail.com</option>
+          <option value="구글">@google.com</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>추가 정보</legend>
+        프로필 사진
+        <input type="file" name="profile" accept="image/jpeg,image/gif" /><br />
+        성별 : <input type="radio" name="gender" id="male" />
+        <label for="male">남자</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="female">여자</label><br />
+        생년월일: <input type="date" name="birth" />
+        <br />
+        취미
+        <input type="checkbox" name="hobby" id="a" />
+        <label for="a">야구</label>
+        <input type="checkbox" name="hobby" id="b" />
+        <label for="b">농구</label>
+        <input type="checkbox" name="hobby" id="c" />
+        <label for="c">축구</label>
+        <input type="checkbox" name="hobby" id="d" />
+        <label for="d">공부</label>
+        <input type="checkbox" name="hobby" id="e" />
+        <label for="e">기타</label>
+        <br />
+
+        자기소개
+      </fieldset>
+    </form>
+  </body>
+</html>
