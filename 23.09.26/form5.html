@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>회원가입</h1>
-    <form>
+    <form action="a-test.html" method="get">
       <fieldset>
         <legend>필수 입력 사항</legend>
         ID
@@ -54,7 +54,12 @@
         <br />
 
         자기소개
+        <textarea row="5" cols="50" name="introduce"></textarea>
       </fieldset>
+      <br />
+      <input type="submit" value="회원가입" />
+      <input type="reset" value="다시입력" />
+      <input type="button" onclick="history.go(-1)" value="이전으로" />
     </form>
   </body>
 </html>
