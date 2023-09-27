@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p.thick {
+      border-style: solid;
+      border-width: thick;
+    }
+    p.medium {
+      border-style: solid;
+      border-width: medium;
+    }
+    p.thin {
+      border-style: solid;
+      border-width: 1px;
+    }
+
+    div {
+      border: 2px solid black;
+      border-radius: 25px;
+    }
+    div {
+      width: 300px;
+      height: 50px;
+      background-color: rgb(255, 245, 47);
+      box-shadow: 20px 10px 5px #375525; /*퍼짐정도:흐리고진하고*/
+    }
+  </style>
+  <body>
+    <h1>경계선 스타일</h1>
+    <p style="border-style: none">none.</p>
+    <p style="border-style: dotted">dotted.</p>
+    <p style="border-style: dashed">dashed.</p>
+    <p style="border-style: solid">solid.</p>
+    <p style="border-style: double">double.</p>
+    <p style="border-style: groove">groove.</p>
+    <p style="border-style: ridge">ridge.</p>
+    <p style="border-style: inset">inset.</p>
+    <p style="border-style: outset">outset.</p>
+    <br />
+    <h1>경계선의 폭</h1>
+    <p class="thick">경계선이 thick으로 설정되었음</p>
+    <p class="medium">경계선이 medium으로 설정되었음</p>
+    <p class="thin">경계선이 1px으로 설정되었음</p>
+    <br />
+    <h1>둥근 경계선</h1>
+    <div>border-radius 속성을 사용하면 둥근 경계선을 만들 수 있습니다.</div>
+
+    <h1>경계선그림자</h1>
+    <div>box-shadow속성을 사용하면 경계선 그림자를 만들 수 있습니다.</div>
+  </body>
+</html>
