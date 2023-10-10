@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rowDirection</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      /* flex-direction: row; 기본 */
+      /* flex-direction: row-reverse; 우측으로 이동 */
+      /* flex-direction: column; 세로정렬 */
+      flex-direction: column-reverse;
+      /* 주축방향이 세로. 순서 거꾸로 */
+    }
+    #container {
+      display: flex;
+      flex-wrap: wrap;
+
+      background-color: greenyellow;
+    }
+    #container > div {
+      margin: 5px;
+      padding: 5px;
+      width: 50px;
+      height: 50px;
+      background-color: orange;
+    }
+  </style>
+  <body>
+    <ul>
+      <li>사자</li>
+      <li>호랑이</li>
+      <li>강아지</li>
+      <li>고양이</li>
+      <li>코끼리</li>
+    </ul>
+    <div id="container">
+      <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div>
+      <div>FLEX</div>
+    </div>
+  </body>
+</html>
