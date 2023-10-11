@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flextest2</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    ul {
+      display: flex;
+      list-style-type: none;
+      border: 5px solid red;
+      padding: 0;
+      height: 300px;
+      /* align-items: flex-start; */
+      /* align-items: flex-end; */
+      /* align-items: center; */
+      /* align-items: stretch; */
+    }
+    li {
+      background-color: aqua;
+      border: 2px solid black;
+      align-self: center;
+    }
+    #li1 {
+      align-self: stretch;
+    }
+    #li2 {
+      align-self: flex-start;
+    }
+    #li3 {
+      align-self: center;
+    }
+    #li4 {
+      align-self: flex-end;
+    }
+    #li5 {
+      align-self: stretch;
+    }
+  </style>
+  <body>
+    <ul>
+      <li id="li1">코뿔소</li>
+      <li id="li2">호랑이</li>
+      <li id="li3">강아지</li>
+      <li id="li4">고양이</li>
+      <li id="li5">코끼리</li>
+    </ul>
+  </body>
+</html>
