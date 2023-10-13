@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gridtest3</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0px;
+    }
+    ul {
+      padding: 0px;
+      list-style: none;
+      border: 5px solid darkblue;
+    }
+    li {
+      background-color: beige;
+      border: 5px solid salmon;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      display: grid;
+      height: 500px;
+      grid-template-columns: 1fr 7fr 5fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "header header header"
+        "aside main main"
+        "aside main main"
+        "aside footer footer";
+      gap: 10px;
+    }
+    li:nth-child(1) {
+      grid-area: header;
+    }
+    li:nth-child(2) {
+      grid-area: main;
+    }
+    li:nth-child(3) {
+      grid-area: aside;
+    }
+    li:nth-child(4) {
+      grid-area: footer;
+    }
+  </style>
+  <body>
+    <ul class="container">
+      <li class="item">HEADER</li>
+      <li class="item">MAIN</li>
+      <li class="item">ASIDE</li>
+      <li class="item">FOOTER</li>
+    </ul>
+  </body>
+</html>
