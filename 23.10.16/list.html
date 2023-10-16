@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>레이아웃 그리드</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    html,
+    body,
+    #wrapper {
+      width: 100%;
+      height: 100%;
+    }
+    #wrapper {
+      display: grid;
+      grid-template-rows: 1.5fr 5fr 1fr;
+      gap: 10px;
+    }
+    #header {
+      background-color: aquamarine;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #content {
+      background-color: rosybrown;
+      /* display: grid;
+      grid-template-columns: 1fr 2fr; */
+    }
+
+    #nav {
+      background-color: rgb(255, 127, 223);
+      display: grid;
+    }
+    #main {
+      background-color: rgb(127, 242, 255);
+    }
+    #footer {
+      background-color: rgb(127, 255, 131);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+    }
+    div {
+      border-radius: 60px;
+    }
+  </style>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <h1>
+          <img
+            src="../resources/Img/Web Shop.jpg"
+            width="60"
+            height="60"
+            alt="nope"
+          />
+          <a href="naver.com">Web shop</a>
+        </h1>
+      </div>
+      <div id="main">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">MY Account</a></li>
+          <li><a href="">Contacts</a></li>
+        </ul>
+      </div>
+
+      <div id="content"><div id="nav">nav</div></div>
+
+      <div id="footer">
+        <p>copyright (c) 2023</p>
+      </div>
+    </div>
+  </body>
+</html>
