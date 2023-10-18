@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html평가</title>
+  </head>
+  <style>
+    fieldset {
+      width: 300px;
+      height: auto;
+      border-color: black;
+      border-style: double;
+      border: 2px solid red;
+    }
+    legend {
+      background-color: black;
+      color: aliceblue;
+      border: 2px solid red;
+    }
+  </style>
+
+  <body>
+    <form>
+      고객명: <input type="name" name="name" placeholder="홍길동" /><br />
+
+      전화번호 :
+      <input
+        type="tel"
+        name="tel"
+        required
+        placeholder="010-0000-0000"
+        pattern="[0-9]{3}[0-9]{4}[0-9]{4}"
+        title="010-0000-0000"
+      /><br />
+
+      이메일: <input type="=email" name="email" placeholder="asdf@gmail.com" />
+    </form>
+    <br />
+
+    <fieldset>
+      <legend>피자 사이즈</legend>
+
+      <input type="radio" name="size" id="Small" value="Small" />
+      <label for="Small">Small</label><br />
+      <input type="radio" name="size" id="medium" value="medium" />
+      <label for="medium">medium</label><br />
+      <input type="radio" name="size" id="Large" value="Large" />
+      <label for="Large">Large</label><br />
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>토핑 선택</legend>
+
+      <input type="checkbox" name="베이컨" id="베이컨" value="topping" />
+      <label for="베이컨">베이컨</label><br />
+      <input type="checkbox" name="치즈" id="치즈" value="topping" />
+      <label for="치즈">치즈</label><br />
+      <input type="checkbox" name="양파" id="양파" value="topping" />
+      <label for="양파">양파</label><br />
+      <input type="checkbox" name="버섯" id="버섯" value="topping" />
+      <label for="양파">버섯</label><br />
+    </fieldset>
+    <br />
+    희망배송시간: <input type="time" name="time" /><br /><br />
+    <form name="input" action="getfeedback.jsp" method="get">
+      배송시 요청사항: <br />
+      <textarea name="feedback" rows="3" cols="40" maxlength="10"></textarea>
+    </form>
+    <br />
+    <button>주문하기</button>
+    <button>다시 선택하기</button>
+  </body>
+</html>
