@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #147373;
+      }
+      .rotate45:hover {
+        /* rotate 단위는 deg를 사용하고, 주어진 각도가 양수이면 시계방향,
+        음수이면 반시계방향으로 회전한다. */
+        /* transform: rotate(45deg); */
+        /* transform: rotate(0.2turn); */
+        /* transform: rotate(-45deg); */
+        /* transform: rotateZ(-45deg); */
+        /* transform: rotateX(-45deg); */
+        /* transform: rotateY(-45deg); */
+        transform: rotateY(180deg);
+      }
+      .scaletest:hover {
+        /* scale은 해당 요소의 크기를 주어진 배율만큼 늘리거나 줄인다. */
+        /* transform: scale(1.5 , 2); */
+        /* transform: scale(0.5, 0.5); */
+        /* transform: scaleX(2); */
+        transform: scaleY(2);
+      }
+      .skewtest:hover {
+        /* skew는 해당요소를 주어진 각도만큼 x축y축 방향으로 기울인다. */
+        /* transform: skew(45deg, 45deg); */
+        /* transform: skewX(45deg); */
+        transform: skewY(45deg);
+      }
+      .translatetest:hover {
+        /* translate는 현재 위치에서 해당 요소를 x축과y축의 거리만큼 이동시킨다.  */
+        /* transform: translate(400px, 400px); */
+        /* transform: translateY(400px); */
+        transform: translateX(400px);
+      }
+      .metrixtest:hover {
+        /* matrix는 모든 transform 메서드를 한줄에 설정할 수 있도록 해준다.
+        matrix(scaleX(), scaleY()  skewY(), skewX(),translateY () ,translateX() )
+        */
+        transform: matrix(2, 0, 0, 2, 200, 200);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>transform Test</h1>
+    <h3>rotate</h3>
+    <div class="rotate45">rotate(45deg)</div>
+    <h3>scale</h3>
+    <div class="scaletest">scale</div>
+    <h3>skew</h3>
+    <div class="skewtest">skew</div>
+    <h3>translate</h3>
+    <div class="translatetest">translate</div>
+    <h3>metrix</h3>
+    <div class="metrixtest">metrix</div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

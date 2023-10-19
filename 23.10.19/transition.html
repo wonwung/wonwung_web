@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transitionn</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #147373;
+        /* transition-property
+       transition 속성을 적용할 대상을 적어준다.
+       transition-duration
+       transition 속성을 적용할 때 소요되는 시간을 적어준다.
+       */
+        transition-property: all;
+        transition-duration: 5s;
+        transition-timing-function: linear;
+        /* transition-delay
+        전환 효과가 나타나기 까지의 지연 시간을 설정한다.
+        */
+        /* transition-delay: 2s; */
+
+        /* 
+        transition-timing-function
+        전환 효과의 시간당 속도를 설정한다.
+        linear : 효과가 처음부터 끝까지 일정한 속도로 진행된다.
+        ease : 기본값으로, 효과가 천천히 시작되어, 빨라지고 마지막에는 다시 느려진다.
+        ease-in : 효과가 천천히 시작되고 점점 빨라진다.
+        ease-out : 효과가 빠르게 시작되고 천천히 느려진다.
+        ease-in-out : 효과가 천천히 시작되어, 천천히 끝난다.
+      */
+      }
+
+      .rotate45:hover {
+        transform-origin: 100% 0 0;
+        transform: rotate(180deg);
+      }
+      .scaletest:hover {
+        /* scale은 해당 요소의 크기를 주어진 배율만큼 늘리거나 줄인다. */
+        /* transform: scale(1.5 , 2); */
+        /* transform: scale(0.5, 0.5); */
+        /* transform: scaleX(2); */
+        transform: scaleY(2);
+        transform-origin: 100% 0 0;
+      }
+      .skewtest:hover {
+        /* skew는 해당요소를 주어진 각도만큼 x축y축 방향으로 기울인다. */
+        /* transform: skew(45deg, 45deg); */
+        /* transform: skewX(45deg); */
+        transform: skewY(45deg);
+      }
+      .translatetest:hover {
+        /* translate는 현재 위치에서 해당 요소를 x축과y축의 거리만큼 이동시킨다.  */
+        /* transform: translate(400px, 400px); */
+        /* transform: translateY(400px); */
+        transform: translateX(400px);
+      }
+      .metrixtest:hover {
+        /* matrix는 모든 transform 메서드를 한줄에 설정할 수 있도록 해준다.
+        matrix(scaleX(), scaleY()  skewY(), skewX(),translateY () ,translateX() )
+        */
+        transform: matrix(2, 0, 0, 2, 200, 200);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- transition을 사용하여 요소의 변경(transform)을 정해진 시간동안 부드럽게 변화시킬 수 있다. -->
+    <h1>transition Test</h1>
+    <h3>transition-property, transition-duration</h3>
+
+    <div class="rotate45">rotate(45deg)</div>
+    <h3>scale</h3>
+    <div class="scaletest">scale</div>
+    <h3>skew</h3>
+    <div class="skewtest">skew</div>
+    <h3>translate</h3>
+    <div class="translatetest">translate</div>
+    <h3>metrix</h3>
+    <div class="metrixtest">metrix</div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

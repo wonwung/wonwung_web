@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>filter</title>
+  </head>
+  <style>
+    img {
+      transition: all 3s linear;
+    }
+    img:hover {
+      /* blur: 이미지에 흐림 효과를 적용한다. */
+      filter: blur(5px);
+      /* brightness : 이미지의 밝기를 조정한다. */
+      filter: brightness(10%);
+      /* contrast : 이미지의 대비를 조정한다. */
+      filter: contrast(150%);
+      /* 
+      drop-shadow :이미지의 그림자 효과를 적용한다.
+      drop-shadow(h-shadow v-shadow blur spread color);
+      h-shadow - 필수, 가로 그림자의 픽셀값(음수값은 그림자의 위치가 왼쪽)
+      v-shadow - 필수, 세로 그림자의 픽셀값(음수값은 그림자의 위치가 왼쪽)
+      blur - 선택, 흐림정도 픽셀값(음수값 비허용)
+      spread - 선택, 번짐정도 필셀값(음수값 허용)
+      color - 선택, 그림자 색상
+      */
+      filter: drop-shadow(8px 8px 10px red);
+    }
+  </style>
+  <body>
+    <h1>Filter Test</h1>
+    <img src="../resources/Img/Americano.jpg" />
+  </body>
+</html>
