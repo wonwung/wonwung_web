@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object</title>
+  </head>
+  <body></body>
+  <script>
+    let name = "홍길동";
+    let age = 20;
+    let gender = "male";
+    let address = "대전광역시 중구 선화동";
+
+    // 객체 선언 방법
+    let person1 = {};
+    let person2 = new Object();
+
+    // 객체 생성 후 프로퍼티 추가 방법1
+    person1.name = "홍길동";
+    person1.age = 21;
+    person1.gender = "male";
+    person1.address = "대전광역시 중구 선화동";
+    console.log(person1);
+
+    // 객체 생성 후 프로퍼티 추가 방법2
+    person2["name"] = "임꺽정";
+    person2["age"] = 20;
+    person2["gender"] = "male";
+    person2["address"] = "대전광역시 중구 선화동";
+    console.log(person2);
+
+    // 객체 선언과 동시에 프로퍼티를 추가 방법
+    let person3 = {
+      name: "김원웅",
+      age: 31,
+      gender: "male",
+      address: "대전광역시 동구 삼성동",
+      child: person1,
+    };
+    console.log(person3);
+    // 객체의 속성 (프로퍼티) 값을 가져오는 방법1
+    console.log(person3.age);
+    console.log(person3.child.name);
+
+    // 객체의 속성 (프로퍼티) 값을 가져오는 방법2
+    console.log(person3["name"]);
+    // 저의 이름은 name 이고 나이는 age 이며, 성별은 gender 입니다. 그리고  주소는 address 입니다.
+    document.write(
+      `저의 이름은 ${person3.name} 이고 나이는${person3.age}이며, 성별은 ${person3.gender} 입니다.<br>그리고 주소는 ${person3.address}입니다 `
+    );
+  </script>
+</html>
