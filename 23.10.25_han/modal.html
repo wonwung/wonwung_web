@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal window</title>
+    <meta name="author" content="Jiho Han" />
+    <meta
+      name="keywords"
+      content="modal window, 모달창, 모달, 메세지, 새창, 팝업"
+    />
+    <meta
+      name="description"
+      content="modal window를 통해 팝업 효과를 만들 수 있다."
+    />
+    <link href="css/modal.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <button id="modal_open" type="button">모달창 열기</button>
+    <p>
+      ㄴㅇㅁㄹ ㅁㄴㅇㄻㄴㅇ ㄻㄴㅇㄹ ㅁㄴㅇㄹ ㄴㅁㅇㄹ ㅁㄴㅇ ㄻㄴㅇㄹ ㅇㄴㅁ
+      ㄻㄴㅇ ㄻㄴㄹ ㅁㄴㅇㄹ ㅁㄴㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅇㄴㅁ ㄹㄴㅁㅇㄹ
+      ㅇㅇㄹㄹㄴㅁㅇㄴㅇㄻㄴㅇ ㄻㄴㅇㄹ ㅁㄴㅇㄹ ㄴㅁㅇㄹ ㅁㄴㅇ ㄻㄴㅇㄹ ㅇㄴㅁ
+      ㄻㄴㅇ ㄻㄴㄹ ㅁㄴㅇㄹ ㅁㄴㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅇㄴㅁ ㄹㄴㅁㅇㄹ
+      ㅇㅇㄹㄹㄴㅁㅇㄴㅇㄻㄴㅇ ㄻㄴㅇㄹ ㅁㄴㅇㄹ ㄴㅁㅇㄹ ㅁㄴㅇ ㄻㄴㅇㄹ ㅇㄴㅁ
+      ㄻㄴㅇ ㄻㄴㄹ ㅁㄴㅇㄹ ㅁㄴㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅇㄴㅁ ㄹㄴㅁㅇㄹ
+      ㅇㅇㄹㄹㄴㅁㅇㄴㅇㄻㄴㅇ ㄻㄴㅇㄹ ㅁㄴㅇㄹ ㄴㅁㅇㄹ ㅁㄴㅇ ㄻㄴㅇㄹ ㅇㄴㅁ
+      ㄻㄴㅇ ㄻㄴㄹ ㅁㄴㅇㄹ ㅁㄴㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅇㄴㅁ ㄹㄴㅁㅇㄹ
+      ㅇㅇㄹㄹㄴㅁㅇㄴㅇㄻㄴㅇ ㄻㄴㅇㄹ ㅁㄴㅇㄹ ㄴㅁㅇㄹ ㅁㄴㅇ ㄻㄴㅇㄹ ㅇㄴㅁ
+      ㄻㄴㅇ ㄻㄴㄹ ㅁㄴㅇㄹ ㅁㄴㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅇㄴㅁ ㄹㄴㅁㅇㄹ
+      ㅇㅇㄹㄹㄴㅁㅇㄴㅇㄻㄴㅇ ㄻㄴㅇㄹ ㅁㄴㅇㄹ ㄴㅁㅇㄹ ㅁㄴㅇ ㄻㄴㅇㄹ ㅇㄴㅁ
+      ㄻㄴㅇ ㄻㄴㄹ ㅁㄴㅇㄹ ㅁㄴㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅇㄴㅁ ㄹㄴㅁㅇㄹ
+      ㅇㅇㄹㄹㄴㅁㅇㄴㅇㄻㄴㅇ ㄻㄴㅇㄹ ㅁㄴㅇㄹ ㄴㅁㅇㄹ ㅁㄴㅇ ㄻㄴㅇㄹ ㅇㄴㅁ
+      ㄻㄴㅇ ㄻㄴㄹ ㅁㄴㅇㄹ ㅁㄴㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅇㄴㅁ ㄹㄴㅁㅇㄹ
+      ㅇㅇㄹㄹㄴㅁㅇㄴㅇㄻㄴㅇ ㄻㄴㅇㄹ ㅁㄴㅇㄹ ㄴㅁㅇㄹ ㅁㄴㅇ ㄻㄴㅇㄹ ㅇㄴㅁ
+      ㄻㄴㅇ ㄻㄴㄹ ㅁㄴㅇㄹ ㅁㄴㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅇㄴㅁ ㄹㄴㅁㅇㄹ
+      ㅇㅇㄹㄹㄴㅁㅇㄴㅇㄻㄴㅇ ㄻㄴㅇㄹ ㅁㄴㅇㄹ ㄴㅁㅇㄹ ㅁㄴㅇ ㄻㄴㅇㄹ ㅇㄴㅁ
+      ㄻㄴㅇ ㄻㄴㄹ ㅁㄴㅇㄹ ㅁㄴㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅁㄴㅇㄹ ㅇㄴㅁ ㄹㄴㅁㅇㄹ
+      ㅇㅇㄹㄹㄴㅁㅇss
+    </p>
+    <ul>
+      <li>찡장로우쓰</li>
+      <li>위샹로우쓰</li>
+      <li>베이징카오야</li>
+    </ul>
+
+    <div id="modal_back">
+      <div id="modal_win">
+        <div id="modal_header">
+          <h4>모달 윈도우</h4>
+          <button id="modal_close" type="button">&times;</button>
+        </div>
+        <div id="modal_body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          sodales efficitur magna id efficitur. Integer sem augue, bibendum id
+          nisl eu, laoreet lacinia diam. Donec placerat nisi lectus, ultricies
+          pulvinar diam posuere eget. Vivamus massa ligula, fermentum eu pretium
+          vel, placerat a enim. Nulla fringilla placerat quam eget sagittis.
+          Proin posuere eros non consequat accumsan. Proin tincidunt faucibus
+          porta. Cras ac orci justo. Nulla ac sodales massa. Aliquam massa ex,
+          maximus non augue ut, posuere lacinia velit. Donec consequat risus
+          pulvinar tempus tincidunt. Nulla ac dapibus urna. Aliquam dictum quam
+          at diam aliquet, ut consectetur lectus placerat. Mauris justo lectus,
+          venenatis a pharetra a, pharetra quis ex. Nulla tincidunt ipsum a sem
+          dignissim, sed lacinia felis aliquet. Donec libero nibh, ultricies ut
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("modal_open").onclick = function () {
+        document.getElementById("modal_back").style.display = "block";
+      };
+
+      document.getElementById("modal_close").onclick = function () {
+        document.getElementById("modal_back").style.display = "none";
+      };
+
+      //   $("#modal_open").click(function () {
+      //     $("#modal_back").show();
+      //   });
+
+      //   $("#modal_close").click(function () {
+      //     $("#modal_back").hide();
+      //   });
+    </script>
+  </body>
+</html>

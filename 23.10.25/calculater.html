@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculater</title>
+  </head>
+  <body>
+    <h3>덧셈 계산기</h3>
+    첫번째 정수: <input id="x" /><br />
+    두번째 정수: <input id="y" /><br />
+    합계: <input id="sum" /> <br />
+    <button onclick="calc()">계산</button>
+  </body>
+  <script>
+    // alert("calc 함수 실행");
+    function calc() {
+      //   요소 접근 방법1 = querySelector
+      //   const x = document.querySelector("#x");
+      //   const y = document.querySelector("#y");
+      //   const sum = document.querySelector("#sum");
+      //   sum.value = parseInt(x.value) + parseInt(y.value);
+      //   console.log(x.value);
+
+      // 요소 접근 방법2 =
+      const x = document.getElementById("x");
+      const y = document.getElementById("y");
+      const sum = document.getElementById("sum");
+      sum.value = parseInt(x.value) + parseInt(y.value);
+    }
+  </script>
+</html>
