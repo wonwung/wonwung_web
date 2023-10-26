@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #333333;
+  font-size: 0.95em;
+  letter-spacing: -0.01em;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+nav ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+}
+header {
+  background-color: #0066cc;
+  height: 120px;
+}
+header h1 {
+  float: left;
+  margin-top: 10px;
+}
+#header_right {
+  float: right;
+}
+
+#gnb {
+  margin-top: 10px;
+}
+#gnb > ul > li {
+  float: left;
+  margin-left: 6px;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 3px 5px;
+}
+
+#gnb a {
+  color: white;
+}
+.gnb_sub {
+  display: none;
+  position: absolute;
+  width: 100px;
+  padding: 4px 5px;
+}
+.gnb_sub a {
+  text-align: right;
+  display: block;
+}
+/* .gnb_main에 마우스를 올렸을떄 마우스 올린 그것의 자식 .gnb_sub가 보여진다 */
+.gnb_main:hover > .gnb_sub {
+  display: block;
+}
