@@ -69,3 +69,127 @@ header h1 {
 .gnb_main:hover > .gnb_sub {
   display: block;
 }
+#lnb {
+  clear: both;
+  float: right;
+  margin-top: 17px;
+}
+.main {
+  float: left;
+}
+.main > a {
+  display: block;
+  width: 120px;
+  padding: 20px 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  position: relative;
+}
+.main > a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  transition: all 0.3s;
+}
+.main > a:hover::after {
+  width: 100px;
+}
+#panel {
+  background-color: aqua;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 120px;
+  display: none;
+  border-bottom: 1px solid #cccccc;
+}
+.sub {
+  position: absolute;
+  max-width: 1200px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 40%;
+  padding-top: 20px;
+  display: none;
+}
+
+.sub li {
+  width: 180px;
+  float: left;
+  margin-bottom: 10px;
+}
+.sub a {
+  display: block;
+  padding: 3px 5px;
+}
+#lnb:hover #panel {
+  display: block;
+}
+.main:hover .sub {
+  display: block;
+}
+
+#footer_top {
+  background-color: #455464;
+  padding: 30px 10px;
+}
+#footer_top a {
+  font-size: 0.8em;
+  color: white;
+  margin-right: 16px;
+}
+#footer_top a::after {
+  content: "";
+  display: inline-block;
+  height: 0.8em;
+  width: 1px;
+  background-color: white;
+  margin-left: 20px;
+}
+#footer_bottom a {
+  font-size: 0.8em;
+  color: white;
+  margin-right: 16px;
+}
+#footer_bottom a::after {
+  content: "";
+  display: inline-block;
+  height: 0.8em;
+  width: 1px;
+  background-color: white;
+  margin-left: 20px;
+}
+#footer_top a:last-of-type::after {
+  content: none;
+}
+#footer_bottom {
+  background-color: #313c49;
+  padding: 30px 0 50px 0;
+  overflow: auto;
+  color: rgba(255, 255, 255, 0.6);
+}
+#footer_bottom_left {
+  float: left;
+}
+#footer_bottom_right {
+  float: right;
+}
+#footer_bottom a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.slick-prev {
+}
+.slick-next {
+}
+.slick-arrow {
+}
