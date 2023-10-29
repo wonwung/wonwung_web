@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>newCalculator</title>
+  </head>
+  <body></body>
+  <script>
+    // 1. 첫번째 prompt를 띄우고 숫자를 입력받는다.
+    const num1 = +prompt("숫자를 입력하세요.");
+
+    // 2. 두번째 prompt를 띄우고 연산자를 입력받는다.
+    const operator = prompt("연산자를 입력하세요", "+, - , * , / , %");
+    // +, - , * , / , %
+
+    // 3. 세번째 prompt를 띄우고 두번째 숫자를 입력받는다.
+    const num2 = +prompt("숫자를 입력하세요.");
+    // 4. 입력받은 연산자가 어떤 연산자인지 조건문으로 확인 후
+    //    첫번째 숫자와 두번째 숫자를 입력받는다.
+    //    (연산자 == "+");
+    let result = 0;
+    if (operator == "+") {
+      result = num1 + num2;
+    } else if (operator == "-") {
+      result = num1 - num2;
+    } else if (operator == "+") {
+      result = num1 * num2;
+    } else if (operator == "/") {
+      result = num1 / num2;
+    } else if (operator == "%") {
+      result = num1 % num2;
+    } else {
+      alert("잘못 입력하셨습니다.");
+      location.reload;
+    }
+
+    // 5. 화면상에 계산된 두개의 숫자와 연산자, 그리고 결과값이
+    //    출력되게 한다.
+    document.write(`<h1>${num1} ${operator} ${num2} = ${result}</h1>`);
+  </script>
+</html>

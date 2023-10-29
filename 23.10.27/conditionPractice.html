@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>condition practice</title>
+  </head>
+  <body></body>
+  <script>
+    // 1. 사용자에게 좋아하는 숫자를 입력받고 그숫자가 짝수라면
+    // "당신이 좋아하는 숫자는 짝수 입니다.!!"
+    // "당신이 좋아하는 숫자는 홀수 입니다.!!"
+    // * 첫번째 방법 *
+    // const userNum = parseInt(prompt("좋아하는 숫자를 입력하세요."));
+    // if (userNum % 2 == 0) {
+    //   document.write(`당신이 좋아하는 숫자는 짝수입니다!!`);
+    // } else {
+    //   document.write(`당신이 좋아하는 숫자는  홀수입니다!!`);
+    // }
+    // * 두번째 방법 *
+    // const userNum = parseInt(prompt("좋아하는 숫자를 입력하세요."));
+    // let str = "";
+    // userNum % 2 == 0 ? (str = "짝수") : (str = "홀수");
+    // document.write(`<h1>당신이 좋아하는 숫자는 ${str}입니다!!</h1>`);
+    // * 세번째 방법 *
+    // let num = prompt("좋아하는 숫자를 입력하세요.");
+    // if (num % 2 == 0) {
+    //   alert("당신이 좋아하는 숫자는 짝수 입니다.!");
+    // } else {
+    //   alert("당신이 좋아하는 숫자는 홀수 입니다.!!");
+    // }
+
+    // const sub = number;
+    // if (odd == "1") {
+    //   result = "당신이 좋아하는 숫자는 짝수 입니다.!!";
+    // } else if (even == "2") {
+    //   result = "당신이 좋아하는 숫자는 홀수 입니다.!!";
+    // }
+    // 2.사용자에게 아이디와 비밀번호를 입력받고 확인하는 조건문을
+    // 작성해보세요.
+    // 아이디가 틀렸을 경우 => 아이디가 틀렸습니다 alert 창 출력
+    // 아이디는 맞고 비밀번호가 틀렸을 경우 => id + 님 비밀번호가 틀렸습니다.
+    // 아이디와 비밀번호 모두 맞을경우 id + 님 환영합니다! alert 출력
+    const id = "dw501";
+    const pwd = "112233";
+    const userId = prompt("아이디를 입력하세요.");
+    const userPwd = prompt("비밀번호를 입력하세요.");
+    // 아이디 확인
+    if (id == userId) {
+      if (pwd == userPwd) {
+        alert(`${id}님 환영합니다!!`);
+      } else {
+        alert(`${id}님 비밀번호가 틀렸습니다.`);
+      }
+    } else {
+      alert("존재하지 않는 아이디 입니다");
+    }
+  </script>
+</html>

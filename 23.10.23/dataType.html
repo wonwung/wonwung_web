@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataType(자료형)</title>
+  </head>
+  <body>
+    <script>
+      //데이터 타입을 알아보자
+      //1. string - 문자열
+      const str1 = "Smith";
+      const str2 = "1";
+      const str3 = "true";
+      console.log(str1, typeof str1);
+
+      // 2. Number - 숫자
+      const num1 = 1;
+      const num2 = 1231241;
+      const num3 = 1.5;
+      console.log(num1, typeof num1);
+
+      // 3. Boolean - 참, 거짓
+
+      const bool1 = true;
+      const bool2 = false;
+      console.log(bool1, typeof bool1);
+      console.log(bool2, typeof bool2);
+
+      // 4. Object - 객체
+      const obj1 = [1, 2, 3, 4, 5, 6, 7, "Smith"]; // 배열 , Array
+      const obj2 = {
+        userName: "Smith",
+        userAge: 25,
+      };
+      console.log(obj2, typeof obj2);
+
+      // 5. Undefined - 값이 없음
+      let undef1;
+      console.log(undef1, typeof undef1);
+
+      //6. Null - 아무것도 없다는 의미
+      let nullValue = null;
+      let objecType = null;
+      objecType = { userName: "Smith" };
+      console.log(nullValue, typeof nullValue);
+    </script>
+  </body>
+</html>

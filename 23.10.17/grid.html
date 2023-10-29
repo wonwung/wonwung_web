@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gridtest3</title>
+    <title>Document</title>
   </head>
   <style>
     * {
@@ -12,12 +12,7 @@
     body {
       margin: 0px;
     }
-
-    html,
-    body,
-    #ul {
-      width: 100%;
-      height: 100%;
+    ul {
       padding: 0px;
       list-style: none;
       border: 5px solid darkblue;
@@ -32,37 +27,48 @@
     }
     .container {
       display: grid;
-
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      height: 500px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas:
         "header header header"
         "nav nav nav"
-        "aside main main"
+        "aside main main "
         "aside main main"
         "footer footer footer";
       gap: 10px;
     }
-    li:nth-child(1) {
+    /* li:nth-child(1) {
       grid-area: header;
     }
     li:nth-child(2) {
-      grid-area: nav;
-    }
-    li:nth-child(3) {
       grid-area: main;
     }
-    li:nth-child(4) {
+    li:nth-child(3) {
       grid-area: aside;
     }
-    li:nth-child(5) {
+    li:nth-child(4) {
       grid-area: footer;
     }
+    li:nth-child(5) {
+      grid-area: nav;
+    } */
   </style>
+
   <body>
     <ul class="container">
-      <li class="item">HEADER</li>
-      <li class="item">NAV</li>
+      <li class="item">
+        <h1>
+          <img
+            src="../resources/Img/Web Shop.jpg"
+            width="60"
+            height="60"
+            alt="nope"
+          />
+          <a href="naver.com">Web shop</a>
+        </h1>
+      </li>
+      <li class="item">nav</li>
       <li class="item">MAIN</li>
       <li class="item">ASIDE</li>
       <li class="item">FOOTER</li>

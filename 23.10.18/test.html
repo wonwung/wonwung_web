@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html,
+    body,
+    #wrapper {
+      width: 100%;
+      height: 100%;
+    }
+    #wrapper {
+      display: grid;
+      grid-template-rows: 1fr 4fr 1fr;
+    }
+    body {
+      margin: 0;
+    }
+
+    #header1 {
+      background-color: aquamarine;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* }
+    #header2 {
+      background-color: rgb(127, 208, 255);
+      display: flex;
+      list-style-type: none;
+      justify-content: space-evenly;
+      align-items: center;
+      /* text-decoration: none; */
+    }
+    */ #category {
+      display: flex;
+      list-style-type: none;
+
+      align-items: center;
+    }
+    li a {
+      text-decoration: none;
+    }
+    #content {
+      background-color: rgb(255, 127, 127);
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+    }
+    #main {
+      background-color: rgb(144, 127, 255);
+    }
+    #footer {
+      background-color: rgb(127, 255, 138);
+    }
+  </style>
+
+  <body>
+    <div id="wrapper">
+      <div id="header1">
+        <img src="../resources/Img/Web Shop.jpg" width="50px" height="50px" />
+        <h2>Web Shopping</h2>
+      </div>
+      <!-- <ul id="header2">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SHOPPING</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">MY ACCOUNT</a></li>
+        <li><a href="#">CONTECTS</a></li>
+      </ul> -->
+
+      <div id="content">
+        <div id="aside1" class="aside">
+          <p>sdsad</p>
+        </div>
+        <div id="main">
+          <p>컴퓨터</p>
+        </div>
+      </div>
+      <!-- <div id="main">m</div> -->
+      <div id="footer">f</div>
+    </div>
+  </body>
+</html>

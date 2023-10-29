@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      height: 500px;
+
+      gap: 10px;
+    }
+    ul {
+      list-style: none;
+    }
+    li:nth-child() {
+      grid-area: header;
+      background-color: aquamarine;
+    }
+    li:nth-child() {
+      grid-area: nav;
+      background-color: bisque;
+    }
+
+    li:nth-child(0) {
+      grid-area: nav;
+      background-color: rgb(196, 238, 255);
+    }
+  </style>
+  <body>
+    <ul class="container">
+      <li class="item">
+        header
+        <!-- <h1>
+          <img
+            src="../resources/Img/Web Shop.jpg"
+            width="60px"
+            height="60px"
+            alt="Xbox"
+            class="1"
+          />My Blog Page
+        </h1> -->
+      </li>
+      <li class="item">nav</li>
+      <li class="item">content</li>
+      <li class="item">main</li>
+      <li class="item">footer</li>
+    </ul>
+  </body>
+</html>
