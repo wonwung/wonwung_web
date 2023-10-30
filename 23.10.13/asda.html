@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+    
+        body {
+          margin: 0%;
+        }
+    
+        html,
+        body,
+        #wrapper {
+          width: 100%;
+          height: 100%;
+        }
+    
+        #wrapper {
+          display: grid;
+          grid-template-rows: 1fr 1fr 6fr 1fr;
+          gap: 1%;
+        }
+        #header1 {
+          background-color: #ffd65c;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        #header2 {
+          background-color: #d1b3e0;
+          display: flex;
+          list-style-type: none;
+          justify-content: space-evenly;
+          align-items: center;
+          border-radius: 60px;
+          margin: 0;
+        }
+    
+        li {
+          letter-spacing: 0.3em;
+          font-weight: 600;
+          color: aliceblue;
+        }
+        #content {
+          /* background-color: aquamarine; */
+          display: grid;
+          grid-template-columns: 1fr 4fr 1fr;
+          gap: 1%;
+        }
+    
+        #footer {
+          background-color: #cccf2c;
+        }
+        .aside {
+          background-color: #e6b3b3;
+          border-radius: 60px 60px 0px 0px;
+          padding: 15% 8%;
+        }
+        #main {
+          background-color: #fafafa;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 1%;
+          padding: 3%;
+          border-radius: 60px 60px 0px 0px;
+        }
+    
+        .item {
+          display: grid;
+          grid-template-rows: 5fr 4fr 1fr;
+          gap: 1%;
+          border: 1px solid #e5e5e5;
+          padding: 5%;
+        }
+        /* #item1 {
+          background-color: aquamarine;
+        }
+    
+        #item2 {
+          background-color: darkkhaki;
+        }
+    
+        #item3 {
+          background-color: gold; */
+    
+        div:not(div#content div) {
+          border-radius: 60px;
+        }
+        div#header1 > div {
+          display: flex;
+          width: 30%;
+          align-items: center;
+        }
+    
+        div#header1 > div > img {
+          width: inherit;
+        }
+    
+        div#header1 > div > span {
+          font-size: 4em;
+          font-weight: 900;
+          color: #53188d;
+        }
+    
+        li a {
+          color: inherit;
+          text-decoration: none;
+        }
+    
+        #header {
+          display: flex;
+          list-style: none;
+        }
+    
+        ul#header2 li {
+          letter-spacing: 0.3em;
+        }
+        #category {
+          background-color: darkorchid;
+          list-style-type: none;
+          padding: 0;
+        }
+        #category li {
+          padding: 8% 8%;
+          border-bottom: 1px solid pink;
+        }
+        #category li:nth-child(1) {
+          border-top: 1px solid pink;
+        }
+      </style>
+    
+      <body>
+        <div id="wrapper">
+          <div id="header1">
+            <div>
+              <img src="../resources/img/쇼핑.jpg" height="100px" />
+              <span>Web Shopping</span>
+            </div>
+          </div>
+    
+          <ul id="header2">
+            <li><a href="#">home</a></li>
+            <li><a href="#">Shopping</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">new</a></li>
+            <li><a href="#">my account</a></li>
+            <li><a href="#">content</a></li>
+          </ul>
+    
+          <div id="content">
+            <div id="aside1" class="aside">
+              <h3>카테고리</h3>
+    
+              <ul id="category">
+                <li><a href="#">컴퓨터</a></li>
+                <li><a href="#">의류</a></li>
+                <li><a href="#">음악</a></li>
+                <li><a href="#">영화</a></li>
+                <li><a href="#">스포츠/ 레저</a></li>
+                <li><a href="#">가구/인테리어</a></li>
+              </ul>
+            </div>
+            <div id="main">
+              <div id="item1" class="item">
+                <img src="../resources/노시환.jpg" width="100px" height="50%" />
+                <span>한성컴퓨터</span>
+                <button>쇼핑카드에 추가</button>
+              </div>
+    
+              <div id="item2" class="item">
+                <img src="../resources/img/coffee.jpg" width="100%" height="100%" />
+                <span>와이ㅏ러ㅏㅇ 와우</span>
+                <button>쇼핑리스트에 추가</button>
+              </div>
+    
+              <div id="item3" class="item"></div>
+            </div>
+    
+            <div id="aside2" class="aside">
+              <h3>shopping Cart</h3>
+              <p>현재 물품이 없습니다</p>
+              <a href="#">쇼핑카드 보기</a>
+              <br /><br />
+              <h3>Log In</h3>
+              아이디<br />
+    
+              <button>회원가입</button><br />
+              <a href="#">회원가입</a>
+              <a href="#">비밀번호 분실</a>
+              <p><input type="id" /></p>
+              <p><input type="psassword" /></p>
+            </div>
+          </div>
+          <div id="footer"></div>
+        </div>
+      </body>
+    </html>

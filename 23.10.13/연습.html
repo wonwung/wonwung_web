@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gridtest4</title>
+  </head>
+ <style>
+  * {box-sizing: border-box;}
+  html , body , #wrapper { width: 100% ; height: 100%;
+  }
+  body { margin: 0;}
+  #wrapper {display: grid;
+grid-template-rows: 1fr 1fr 3fr 1fr;
+gap: 1%;
+}
+
+  #header1 {background-color: rgb(230, 215, 250);
+  }
+
+  #header2 {background-color: rgb(215, 250, 247);}
+
+  #content {
+    background-color: rgb(215, 215, 250);
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  gap: 1%;
+}
+  .aside {background-color: red;}
+  #main {background-color: antiquewhite;
+  display: grid;
+/* grid-template-columns: 1fr 1fr 1fr ;  */
+}
+ 
+  #footer {background-color: rgb(250, 223, 215);}
+  
+
+
+
+
+
+ </style>
+   
+  <body>
+   <div id="wrapper">
+    <div id="header1">header1</div>
+    <div id="header2">header2</div>
+    
+    <div id="content">
+      <div id="aside1" class="aside">
+      <h3>카테고리</h3>
+      <ul id="category">
+      <li> <a href="#">의류</li>
+      <li> <a href="#">음악</li>
+      <li> <a href="#">영화</li>
+      <li> <a href="#">스포츠/레저</li>
+      <li> <a href="#">가구/인테리어</li>
+    </ul>
+      </div>
+      content
+      <div id="aside2" class="aside">
+         aside2
+        </div>
+      
+      </div>
+      
+    <div id="main">main</div>
+
+    <div id="footer">footer</div>
+   </div> 
+  </body>
+</html>
