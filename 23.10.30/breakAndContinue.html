@@ -26,11 +26,13 @@
     }
     document.write(msg);
 
-    let j=0;
-    for (true){
-        document.write(`<h2>${j}<h2>`)
-            j++
-            document.write()
+    let j = 0;
+    while (true) {
+      document.write(`<h2>${j}<h2>`);
+      j++;
+      if (j == 5) {
+        break;
+      }
     }
   </script>
 </html>
