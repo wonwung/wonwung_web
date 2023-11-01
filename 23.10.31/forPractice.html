@@ -7,6 +7,11 @@
   </head>
   <body></body>
   <script>
+    for (let i = 1; i <= 5; i++) {
+      document.write(`*`);
+      document.write(`<br>`);
+    }
+    document.write(`<hr>`);
     for (let j = 1; j <= 5; j++) {
       for (let i = 1; i <= j; i++) {
         document.write(`*`);
@@ -16,13 +21,60 @@
     document.write(`<hr>`);
 
     for (let i = 1; i <= 5; i++) {
-      for (let j = 1; j >= i; j++) {
-        document.write(`&nbsp`);
+      for (let j = 4; j >= i; j--) {
+        document.write(`&nbsp;`);
       }
       for (let n = 1; n <= i; n++) {
         document.write(`*`);
       }
       document.write(`<br>`);
     }
+    document.write(`<hr>`);
+    for (let j = 5; j >= 1; j--) {
+      for (let i = 1; i <= j; i++) {
+        document.write(`*`);
+      }
+      document.write(`<br>`);
+    }
+    document.write(`<hr>`);
+
+    for (let i = 5; i >= 1; i--) {
+      for (let j = 4; j >= i; j--) {
+        document.write(`&nbsp;`);
+      }
+      for (let n = 1; n <= i; n++) {
+        document.write(`*`);
+      }
+      document.write(`<br>`);
+    }
+    document.write(`<hr>`);
+    for (let i = 1; i <= 5; i++) {
+      for (let j = 4; j >= i; j--) {
+        document.write(`&nbsp;`);
+      }
+      for (let n = 1; n <= i; n++) {
+        document.write(`*`);
+      }
+      document.write(`<br>`);
+    }
+    document.write(`<hr>`);
+
+    for (let i = 0; i <= 5; i++) {
+      for (let j = 4; j >= i; j--) {
+        document.write(`&nbsp;`);
+      }
+    }
+    //   for (let k = 0; k <= i; k++) {
+    //     document.write(`*`);
+    //   }
+    //   for (let z = 0; z < i; z++) {
+    //     document.write(`*`);
+    //   }
+    //   document.write(`<br>`);
+    // }
+    for (let k = 1; k < 2 * i + 2; k++) {
+      document.write(`*`);
+    }
+    document.write(`&nbsp;`);
   </script>
 </html>
