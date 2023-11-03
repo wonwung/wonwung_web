@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-function</title>
+  </head>
+  <body>
+    <button onclick="showDialog()">대화상자오픈</button>
+    <button onclick="greeting('김진용', '차장')">환영합니다</button>
+    <button onclick="returnTest1()">return 테스트1</button>
+    <button onclick="returnTest2()">return 테스트2</button>
+  </body>
+  <script>
+    function showDialog() {
+      alert("안녕하세요?");
+    }
+    function greeting(name, position) {
+      //   alert(name + " " + position + "님을 환영합니다.");
+      alert(`${name} ${position}님을 환영합니다.`);
+      return `파라미터는 ${name}과 ${position}입니다.`;
+    }
+    function returnTest1() {
+      console.log(showDialog()); // undefined
+    }
+    function returnTest2() {
+      console.log(greeting("김진용", "차장")); // 결과값
+    }
+  </script>
+</html>

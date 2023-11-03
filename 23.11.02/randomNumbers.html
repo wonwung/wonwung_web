@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03-randomNumbers</title>
+  </head>
+  <style>
+    div {
+      background-color: yellow;
+      border: 2px solid red;
+      width: 200px;
+      height: 300px;
+      overflow: auto;
+    }
+  </style>
+  <body>
+    <input type="button" value="시작" onclick="randProc()" />
+    <hr color="blue" />
+    <h1>출력위치</h1>
+    <div id="res">
+      <!-- <p>1,2,3,4,5</p>
+      <p>6,7,8,9,10</p> -->
+    </div>
+  </body>
+  <script>
+    function randProc() {
+      // 1. 1 ~ 100 까지의 숫자 5개 생성
+      let numArr = [];
+      for (let i = 0; i < 5; i++) {
+        numArr[i] = parseInt(Math.random() * 100 + 1);
+        // numArr.push(parseInt(Math.random() * 100 + 1));
+      }
+      //   console.log(numArr);
+      // 2. id가 res인 div에 숫자 5개 추가(p태그를 사용)
+      // 2.1 p태그 생성
+      const p = document.createElement("p"); // <p></p>
+
+      // 2.2 생성한 p태그에 text 넣어준다.
+      //   p.innerHTML = "새로 생성한 p태그 입니다."; // <p>새로 생성한 p태그 입니다.</p>
+      p.innerHTML = numArr.toString(); // "1,2,3,4,5"
+
+      // 2.3 div 요소를 가져와서 p태그를 넣어준다.
+      const res = document.getElementById("res");
+      res.append(p);
+    }
+  </script>
+</html>
