@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //원본 배열을 변형시키지 않고 참조만 하는 함수
+    document.write(`<h1>1. join() 함수 </h1>`);
+    /// 원본 배열을 변형시키는 함수
+    // 1. join() 함수 - 배열의 모든 요소를 하나의 문자열로 변환한다.
+    // 파라미터는 optional 이며, 배열 요소 사이를 구분짓는 구분자로 사용된다.
+    const arr = [1, true, "javascript", false, "C언어"];
+    document.write(`<h2> / 로 구분 : [${arr.join("/")}]</h2>`);
+    document.write(`<h2> + 로 구분 : [${arr.join("+")}]</h2>`);
+    document.write(`<h2> 공백으로 로 구분 : [${arr.join(" ")}]</h2>`);
+    document.write(`<h2> 파라미터 없이 join 사용 : [${arr.join()}]</h2>`);
+    document.write(`<hr>`);
+    document.write(`<h1>2. slice() 함수 </h1>`);
+    // 2. slice() 함수 -  전달받은 시작 인덱스부터 종료 인덱스 바로 앞까지의
+    // 모든 배열 요소를 추출하여 새로운 배열을 반환한다.
+    // 파라미터러 종료 인덱스가 전달되지 않으면 마지막 배열 요소까지 모두 추출한다.
+    document.write(`<h2>slice 로 반환된 배열 : [${arr.slice(1, 3)}]</h2>`);
+    document.write(
+      `<h2>slice 에 종료 인덱스가 없을 때 : [${arr.slice(1)}]</h2>`
+    );
+    document.write(`<h2>원본 배열 : [${arr}]</h2>`);
+
+    document.write(`<hr>`);
+    document.write(`<h1>3. concat() 함수</h1>`);
+    // 3. concat() 함수 - 배열의 뒤에 파라미터로 전달받은 배열을 합쳐서
+    // 새로운 배열을 반환한다.
+    // document.write(
+    //   `<h2>concat 함수로 만든 배열 : [${arr.concat([1, 2, "문자열"])}]</h2>`
+    // );
+    document.write(
+      `<h2>concat 함수로 만든 배열 : [${arr.concat([1], [2, "문자열"])}]</h2>`
+    );
+
+    document.write(`<hr>`);
+    document.write(`<h1>4. toString() 함수</h1>`);
+    // 4. toString() 함수 - 배열의 모든 요소를 하나의 문자열로 반환한다.
+    document.write(`<h2>toString 함수로 만든 배열 : ${arr.toString()}</h2>`);
+  </script>
+</html>

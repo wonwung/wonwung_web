@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // 원본 배열을 변형시키지 않고 반복해서 참조하는 함수
+    document.write(`<hr>`);
+    document.write(`<h1>1. forEach() 함수</h1>`);
+    // 1. forEach() 함수 - 해당 배열의 모든 요소에 대하여 반복적으로
+    // 명시된 함수를 실행한다.
+    const arr = [1, true, "Javascript"];
+    // document.write(`<h2>${arr[0]}</h2>`);
+    // document.write(`<h2>${arr[1]}</h2>`);
+    // document.write(`<h2>${arr[2]}</h2>`);
+    // for(let i = 0; i < arr.length; i++){
+    //     document.write(`<h2>${arr[i]}</h2>`);
+    // }
+    arr.forEach((v) => {
+      document.write(`<h2>${v}</h2>`);
+    });
+
+    // forEach 원형
+    arr.forEach(function (value, index, array) {
+      document.write(
+        `<h2>value : ${value}, index : ${index}, array : ${array}</h2>`
+      );
+    });
+
+    function arrPrint(value, index, array) {
+      document.write(`<h2>${value}</h2>`);
+    }
+    arr.forEach(arrPrint);
+
+    document.write(`<hr>`);
+    document.write(`<h1>2. map() 함수</h1>`);
+    // 2. map() 함수 🌟
+    // 해당 배열의 모든 요소에 대하여 반복적으로 명시된 콜백 함수를 실행한 후,
+    // 그 해당 결과를 새로운 배열에 담아 반환한다.
+    const arr2 = [3, 4, 5, 6];
+    // [9, 12, 15, 18]
+    // arr2 의 요소들에 각각 3을 곱하여 나오는 값으로 만든 새로운 배열을 만들어보세요.
+    // let tempArr = [];
+    // for (let i = 0; i < arr2.length; i++) {
+    //   tempArr.push(arr2[i] * 3);
+    // }
+    // let modifiedArr = arr2.map(function (v) {
+    //   return v * 3;
+    // });
+    let modifiedArr = arr2.map((v) => v * 3);
+    document.write(`<h2>map 을 사용하여 만든 배열 : [${modifiedArr}]</h2>`);
+
+    // map 함수의 원형
+    // 순회할 수 있는 객체 ==> 순서가 있는 객체
+    arr2.map(function (element, index, array) {
+      return element * 3;
+    });
+
+    let users = [
+      { firstName: "Beckham", lastName: "David" },
+      { firstName: "De Bruyne", lastName: "Kevin" },
+      { firstName: "Haaland", lastName: "Erling" },
+    ];
+    // lastName, firstName
+    console.log(users);
+
+    // ["David Beckham", "Kevin De Bruyne", "Erling Haaland"];
+    // let nameArr = [];
+    // for (let i = 0; i < users.length; i++) {
+    //   nameArr.push(`${users[i].lastName} ${users[i].firstName}`);
+    // }
+    // console.log(nameArr);
+
+    let nameArr = users.map(function (el) {
+      return `${el.lastName} ${el.firstName}`;
+    });
+    document.write(`<h2>[${nameArr}]</h2>`);
+  </script>
+</html>
