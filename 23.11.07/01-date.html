@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date 객체</title>
+  </head>
+  <body></body>
+  <script>
+    // Date 객체 생성
+    // new Object()
+    // new Array()
+    const now = new Date();
+    document.write(`<h2>${now}<h2>`);
+
+    // getFullYear() - 년도를 반환하는 함수
+    const year = now.getFullYear();
+    document.write(`<h2>${year}<h2>`);
+
+    // getMonth() - 달(월) 을 반환하는 함수
+    let month = now.getMonth();
+    month = month + 1;
+    if (month < 10) {
+      month = "0" + month;
+    }
+    document.write(`<h2>${month}<h2>`);
+
+    // getDate() - 일을 반환하는 함수
+    let date = now.getDate();
+    if (date < 10) {
+      date = "0" + date;
+    }
+    document.write(`<h2>${date}<h2>`);
+
+    // getDay() - 요일을 숫자를 반환하는 함수
+    // 월요일 == 1, 화요일 == 2 , ... 일요일 == 7
+    const day = now.getDay();
+    document.write(`<h2>${day}<h2>`);
+    const dayArr = ["월", "화", "수", "목", "금", "토", "일"];
+    //           0     1     2     3     4     5     6
+    document.write(`<h2>${year}/${month}/${date}(${dayArr[day - 1]})<h2>`);
+
+    //toLocaleDateString() 함수 - 연월일
+    document.write(`<h2>${now.toLocaleDateString()}<h2>`);
+
+    //toLocaleTimeString() 함수 - 시간
+    document.write(`<h2>${now.toLocaleTimeString()}<h2>`);
+    document.write(`<hr>`);
+    //toLocaleString() 함수 - 연,월,일 + 시간
+    const options = {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      weekday: "long",
+    };
+    document.write(`<h2>${now.toLocaleString("ko-KR", options)}<h2>`);
+  </script>
+</html>
