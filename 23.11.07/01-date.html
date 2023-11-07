@@ -40,6 +40,9 @@
     //           0     1     2     3     4     5     6
     document.write(`<h2>${year}/${month}/${date}(${dayArr[day - 1]})<h2>`);
 
+    document.write(`<h1>${now.toISOString()}</h1>`);
+    document.write(`<h1>${now.toISOString().split("T")[0]}</h1>`);
+
     //toLocaleDateString() 함수 - 연월일
     document.write(`<h2>${now.toLocaleDateString()}<h2>`);
 
