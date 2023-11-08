@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-popup</title>
+  </head>
+  <body>
+    <input type="button" value="게임하러가기" onclick="openPopup()" />
+    <input type="button" value="게임창 닫기" onclick="closePopup()" />
+  </body>
+  <script>
+    let child;
+    function openPopup() {
+      child = open(
+        "01-numberGuess.html",
+        "_blank",
+        "width= 1000 , height=500 "
+      );
+    }
+    function closePopup() {
+      child.close();
+    }
+  </script>
+</html>
