@@ -20,13 +20,6 @@
     function stopInterval() {
       clearInterval(startInterval);
     }
-    const p = document.createElement("p");
-    p.innerHTML = showAlert;
-    let colorArr = [];
-    for (let i = 0; i < 3; i++) {
-      colorArr[i] = parseInt(math.random() * 256);
-    }
-    showAlert.style.backgroundColor = `rgb(${colorArr.toString()})`;
 
     // const luma =
     //   0.2126 * colorArr[0] + 0.7152 * colorArr[1] + 0.0722 * colorArr[2];

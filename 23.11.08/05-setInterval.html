@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04-setInterval</title>
+  </head>
+  <body>
+    <p>버튼을 누르면 3초 마다 경고 박스가 화면에 표시됩니다.</p>
+    <button onclick="showAlert()">눌러보세요</button>
+    <button onclick="stopInterval()">반복취소버튼</button>
+  </body>
+  <script>
+    let startInterval;
+    function showAlert() {
+      startInterval = setInterval(function () {
+        // 1. RGB 코드를 만들 수 있도록 세개의 랜덤 숫자를 생성한다.
+        // 1.1 생성된 랜덤 숫자를 저장할 배열 변수를 만든다.
+        const colorArr = [];
+        for (let i = 0; i < 3; i++) {
+          colorArr.push(parseInt(Math.random() * 256));
+        }
+
+        // 2. 배경색상을 변경하려는 대상을 가져온다.(p태그)
+        const pTag = document.querySelector("p");
+
+        // 3. 가져온 p태그의 style속성의 backgroundColor 에 접근하여
+        //    RGB값으로 위에서 생성해준 랜덤숫자 세개를 넣어준다.
+        // const p = {
+        //   temp1: "temp1",
+        //   temp2: "temp2",
+        //   temp3: "temp3",
+        //   style: {
+        //     color: "",
+        //     backgroundColor: "",
+        //   }
+        // }
+        pTag.style.backgroundColor = `rgb(${colorArr.toString()})`;
+      }, 100);
+    }
+
+    function stopInterval() {
+      clearInterval(startInterval);
+    }
+  </script>
+</html>
