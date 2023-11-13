@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>addEventListener</title>
+  </head>
+  <body>
+    <button id="btn">클릭해보세요!</button>
+    <p id="p1">클릭해보세요!!!!</p>
+    <input type="text" id="input1" />
+  </body>
+  <script>
+    function clickFunc() {
+      alert("클릭 이벤트 발동");
+    }
+    //addEventListener() 함수
+    // 어떤 대상 요소에 이벤트 핸들러(함수)를 할당한다.
+    const btn = document.getElementById("btn");
+    // btn.addEventListener("click", clickFunc);
+
+    btn.addEventListener("click", function () {
+      alert("익명함수로 연결한 버튼 클릭 이벤트");
+    });
+
+    const p1 = document.getElementById("p1");
+    p1.addEventListener("dblclick", function () {
+      alert(p1.innerHTML);
+    });
+    p1.addEventListener("contextmenu", function () {
+      alert("마우스 우클릭이 금지된 사이트입니다.");
+    });
+
+    const input1 = document.getElementById("input1");
+    // input1.addEventListener("keydown", function (event) {
+    //   console.log(event);
+    // });
+    // input1.addEventListener("keypress", function (event) {
+    //   console.log(event);
+    // });
+    input1.addEventListener("keyup", function (event) {
+      console.log(event);
+    });
+    //console.log(clickFunc);
+  </script>
+</html>
