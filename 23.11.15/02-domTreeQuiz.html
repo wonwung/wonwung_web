@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-domTreeQuiz</title>
+  </head>
+  <body>
+    <h2>진행 중인 과목</h2>
+    <ul id="doing-list">
+      <li>인터랙티브 자바스크립트</li>
+      <li>반응형</li>
+      <li>웹</li>
+      <li>jQuery</li>
+    </ul>
+    <h2>완료한 과목</h2>
+    <ul id="done-list">
+      <li>프로그래밍 In Javascript</li>
+      <li>핵심 Javascript</li>
+      <li>기초 Javascript</li>
+      <li>모던 Javascript</li>
+      <li>웹 퍼블리싱</li>
+      <li>HTML 핵심 개념</li>
+    </ul>
+  </body>
+  <script>
+    const bodyTag = document.querySelector("body");
+    bodyTag.children[2].previousElementSibling.children[0].style.backgroundColor =
+      "yellow";
+
+    // bodyTag.firstElementChild  ==> red
+    bodyTag.firstElementChild.nextElementSibling.children[0].style.color =
+      "red";
+    // bodyTag.children[1] ==> blue
+    bodyTag.children[1].children[0].style.fontSize = "30px";
+
+    // bodyTag.children[3].firstElementChild.style.backgroundColor = "blue";
+    // bodyTag.children[3].children[1].style.backgroundColor = "yellow";
+
+    const doneList = document.querySelector("#done-list");
+    const doingList = document.querySelector("#doing-list");
+    doingList.children[2].nextElementSibling.style.backgroundColor = "aqua";
+    // doneList.parentElement ==> 글씨색상 blue
+    doneList.parentElement.children[1].lastElementChild.style.color = "blue";
+    // doingList.parentElement ==> fontSize 32px
+    doingList.parentElement.children[1].lastElementChild.style.fontSize =
+      "32px";
+  </script>
+</html>
