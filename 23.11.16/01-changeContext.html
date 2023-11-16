@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01-changeContext</title>
+  </head>
+  <body>
+    <div id="ex">무궁화 꽃이 피었습니다.</div>
+    <a href="#" onclick="get()">div 요소 내용 가져오기</a><br />
+    <!-- <a href="#" onclick="set('장미꽃이 피었습니다')">div 요소 내용 변경하기</a -->
+    <a href="#" onclick="set('장미꽃이 피었습니다')">div 요소 내용 변경하기</a
+    ><br />
+  </body>
+  <script>
+    function get() {
+      const val = document.getElementById("ex").innerHTML;
+      alert(val);
+    }
+    // function set(v) {
+    //   document.getElementById("ex").innerHTML =v ;
+    // }
+    function set(v) {
+      document.getElementById("ex").innerHTML =
+        prompt("변경할 내용을 입력하세요.");
+    }
+  </script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      id="image"
+      src="../resources/img/Americano.jpg "
+      width=" 300"
+      height="300"
+    />
+    <input type="button" onclick="changeImage()" value="눌러보세요" />
+  </body>
+  <script>
+    function changeImage() {
+      const img = document.getElementById("image");
+      //   img.src = "../resources/img/라떼.jpg";
+      img.setAttribute("src", "../resources/img/라떼.jpg");
+      //   img.setAttribute("변경전 사진", "변경할 사진.");
+      //  img.getAttribute("src")
+      //   img.getAttribute("id")
+      //   img.getAttribute("class")
+    }
+  </script>
+</html>
