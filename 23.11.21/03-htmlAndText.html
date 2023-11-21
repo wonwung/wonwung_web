@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03-htmlAndText</title>
+  </head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <body>
+    <p>1<span>홍길동</span></p>
+    <p>2<span>개나리</span></p>
+    <p>3<span>진달래</span></p>
+  </body>
+  <script>
+    // alert($("p").html()); // innerHTML
+    // alert($("p").text());
+    $("p").each(function (i, v) {
+      alert($(v).html());
+    });
+
+    // $(`p`).each(function(index, value){
+
+    // })
+
+    // forEach(function(value, index , array){
+
+    // })
+  </script>
+</html>
