@@ -6,6 +6,12 @@
     <title>04-filterSelector</title>
   </head>
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <style>
+    table {
+      border-collapse: collapse;
+      border: 1px;
+    }
+  </style>
   <body>
     <ul>
       <li>one</li>
@@ -24,21 +30,21 @@
         <th>주소</th>
       </tr>
       <tr>
-        <td>홍길동</td>
-        <td>대전</td>
+        <th>홍길동</th>
+        <th>대전</th>
       </tr>
 
       <tr>
-        <td>진달래</td>
-        <td>서울</td>
+        <th>진달래</th>
+        <th>서울</th>
       </tr>
       <tr>
-        <td>개나리</td>
-        <td>부산</td>
+        <th>개나리</th>
+        <th>부산</th>
       </tr>
       <tr>
-        <td>무궁화</td>
-        <td>대구</td>
+        <th>무궁화</th>
+        <th>대구</th>
       </tr>
     </table>
   </body>
@@ -48,11 +54,11 @@
     // $("li:lt(4)").css("font-size", "24px");
     // $("li:first, li:last").css("backgroundColor", "yellow");
     // $("li:eq(5)").css("backgroundColor", "red");
-    // $("li:even").css("backgroundColor", "gray");
-    // $("li:odd").css("backgroundColor", "red");
+    $("li:even").css("backgroundColor", "gray");
+    $("li:odd").css("backgroundColor", "red");
 
-    $("tr:even").css("backgroundColor", "darkgray");
-    $("tr:first").css("backgroundColor", "#3f3f3f");
-    // $("th").css("backgroundColor", "#3f3f3f");
+    $("tr:odd").css("backgroundColor", "#3f3f3f");
+    $("tr:even").css("backgroundColor", "yellow");
+    $("tr:first").css("backgroundColor", "black").css("color", "white");
   </script>
 </html>

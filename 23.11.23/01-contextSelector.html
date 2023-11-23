@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01-contextSelector</title>
+  </head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  <style type="text/css">
+    div {
+      width: 300px;
+      height: 30px;
+      border: 1px solid green;
+    }
+  </style>
+
+  <body>
+    <div></div>
+    <div>
+      헬로우~~
+      <span>오늘도 즐겁게~열심히!</span>
+    </div>
+    <p>Hello jQuery! <span>Thanks, jQuery!</span></p>
+    <div class="myClass">jQuery!</div>
+    <span class="notMyClass">쉬운 jQuery~~!</span>
+    <div></div>
+    <br /><br />
+    <hr color="blue" />
+    <br />
+  </body>
+  <script>
+    // JQuery가 포함된 span태그의 테두리 : 파랑
+    $("span:contains(jQuery)").css("border", "2px solid blue");
+    // JQuery가 포함되지 않은 span태그의 테두리 : 빨강
+    $("span").not("span:contains(jQuery)").css("border", "2px solid red");
+    // span을 갖는 div요소 태그의 테두리 : 핑크
+    $("div:has(span)").css("border", "2px solid pink");
+    // 아무것도 없는 빈 div 태그의 테두리 : 오렌지
+    $("div:empty").css("border", "2px solid orange");
+    // div 후손 span 태그의 글자색 :빨강 , 크기 : 굵게
+    // $("div span:parent").css("color","red").css("font-size","18px").css("font-weight","600")
+    $("div span:parent").css({
+      color: "red",
+      "font-size": "18px",
+      "font-weight": "600",
+    });
+  </script>
+</html>
