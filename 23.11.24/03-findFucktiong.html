@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03-findFucktiong</title>
+  </head>
+  <style>
+    .wrapper * {
+      display: block;
+      border: 2px solid lightgray;
+      color: lightgray;
+      padding: 5px;
+      margin: 15px;
+    }
+    .wrapper {
+      width: 500px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  <body>
+    <div class="wrapper">
+      <ul>
+        ul
+        <li class="start">li class="start"</li>
+        <li class="my">li class-"my"</li>
+        <li>li</li>
+        <li class="my">li class-"my"</li>
+        <li class="stop">li class="stop"</li>
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // 선택요소의 다음 형제요소들 = next() , nextAll() , nextUntil(selector)
+
+    // $("li.start").next().css({
+    //   color: "red",
+    //   border: " 2px solid red",
+    // });
+    // $("li.start").nextAll().css({
+    //   color: "red",
+    //   border: " 2px solid red",
+    // });
+    // $("li.start").nextUntil("li.stop", ".my").css({
+    //   color: "red",
+    //   border: " 2px solid red",
+    // });
+
+    // 선택요소의 이전 형제요소들 = prev() ,preveAll() , prevUntil(selector)
+
+    // $("li.stop").prev().css({
+    //   color: "red",
+    //   border: " 2px solid red",
+    // });
+    // $("li.stop").prevAll().css({
+    //   color: "red",
+    //   border: " 2px solid red",
+    // });
+    // $("li.stop").prevUntil("li.start").css({
+    //   color: "red",
+    //   border: " 2px solid red",
+    // });
+
+    // $("li.start").siblings("li.my").css({
+    //   color: "red",
+    //   border: "2px solid red",
+    // });
+
+    $("li.start, li.stop").css({
+      color: "red",
+      border: "2px solid red",
+    });
+    // $("li.start").add("li.stop").css({
+    //   color: "red",
+    //   border: "2px solid red",
+    // });
+  </script>
+</html>

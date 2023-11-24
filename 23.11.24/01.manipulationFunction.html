@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01.manipulationFunction</title>
+  </head>
+  <style>
+    p {
+      cursor: pointer;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+  <body>
+    <p title="Tulips">강아지1</p>
+    <p title="Chrysanthemum">강아지2</p>
+    <p title="Koala">강아지3</p>
+    <p title="Hydrangeas">꽃1</p>
+  </body>
+
+  <script>
+    $("#container").on("click", function () {
+      $("#container").append(`
+            <span>새로 생성된 span 태그 입니다.</span>
+            <table>
+                <tr>
+                    <th>필드1</th>
+                    <th>필드2</th>
+                </tr>
+                <tr>
+                    <td>table 태그</td>
+                    <td>span 태그</td>
+                </tr>
+            </table>
+        `);
+    });
+
+    const imgArr = ["강아지1.jpg", "강아지2.jpg", "강아지3.jpg", "꽃1.jpg"];
+    $("p").on("click", function () {
+      const idx = $(this).index();
+      // 선택 요소내부에  추가하는 메소드들
+      //   $(this).append(`<img src="../resources/img/${imgArr[idx]}" />`);
+      // $(`<img src="../resources/img/${imgArr[idx]}" />`).appendTo(this);
+      //   $(this).prepend(`<img src="../resources/img/${imgArr[idx]}" />`);
+      //   $(`<img src="../resources/img/${imgArr[idx]}" />`).prependTo(this);
+
+      // 선택요소를 외부에 추가하는 메소드들.
+      // $(this).after(`<img src="../resources/img/${imgArr[idx]}" />`);
+      // $(`<img src="../resources/img/${imgArr[idx]}" />`).insertAfter(this);
+      //   $(this).before(`<img src="../resources/img/${imgArr[idx]}" />`);
+      $(`<img src="../resources/img/${imgArr[idx]}" />`).insertBefore(this);
+    });
+  </script>
+</html>

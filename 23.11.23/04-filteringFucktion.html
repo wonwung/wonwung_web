@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>04-filteringFucktion</title>
+    <title>04-filteringFunction</title>
   </head>
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-
   <body>
     <form>
       <label for="user">이름</label>
@@ -26,23 +25,27 @@
       <input type="button" id="btnChange" value="이름변경" />
     </form>
   </body>
-
   <script>
     // console.log($("label[for=user]").html());
     // console.log($("label[for=user]").text());
+    // const userLabel = document.querySelector("label[for=user]");
+    // userLabel.innerHTML = "Name";
+
     $("label[for=user]").html("Name");
-    $("#user").val("대한민국");
+    $("#user").val("America");
 
     $("#btnChange").on("click", function () {
-      const newName = prompt("이름을 입력하세요");
+      const newName = prompt("새로운 이름을 입력해주세요.");
       $("#user").val(newName);
     });
 
-    $("btnView").on("click", function () {
-      alert$("asd");
-      $("#user").val();
-      $("#gend").val();
-      $("").val();
+    $("#btnView").on("click", function () {
+      const name = $("#user").val();
+      const gender = $("[name=gend]:checked").val();
+      const intro = $("textarea").val();
+      const job = $(":selected").val();
+
+      alert(`${name}, ${gender}, ${intro}, ${job}`);
     });
   </script>
 </html>
