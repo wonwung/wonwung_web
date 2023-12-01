@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-classFunction</title>
+  </head>
+  <style>
+    .wrapper * {
+      display: block;
+      border: 2px solid lightgray;
+      color: lightgray;
+      padding: 5px;
+      margin: 15px;
+    }
+    .wrapper {
+      width: 500px;
+    }
+    .big {
+      font-size: 32px;
+      color: blue;
+      font-weight: bold;
+    }
+    .back {
+      background-color: yellow;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <body>
+    <div class="wrapper">
+      <ul>
+        ul
+        <li class="start">li class="start"</li>
+        <li class="my">li class="my"</li>
+        <li>li</li>
+        <li class="my">li class="my"</li>
+        <li class="stop">li class="stop"</li>
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
+      </ul>
+    </div>
+    <button id="addClassBtn">클래스 추가 버튼</button>
+    <button id="hasClassBtn">클래스 확인 버튼</button>
+    <button id="removeClassBtn">클래스 삭제 버튼</button>
+    <button id="toggleClassBtn">클래스 토글 버튼</button>
+  </body>
+  <script>
+    // $("#addClassBtn").on("click", function () {
+    //   $("li:last").addClass("big back");
+    // });
+    // $("#hasClassBtn").on("click", function () {
+    //   const chk = $("li:last").hasClass("big back");
+    //   if (chk) {
+    //     alert("big, back 클래스가 적용되었습니다.");
+    //   } else {
+    //     alert("big, back 클래스가 적용되어 있지 않습니다.");
+    //   }
+    // });
+    // $("#removeClassBtn").on("click", function () {
+    //   $("li:last").removeClass("big back");
+    // });
+    // $("#toggleClassBtn").on("click", function () {
+    //   $("li:last").toggleClass("big back");
+    // });
+
+    $("button").on("click", function () {
+      const btnId = $(this).attr("id");
+      if (btnId.search("add") == 0) {
+        $("li:last").addClass("big back");
+      } else if (btnId.search("has") == 0) {
+        alert($("li:last").hasClass("big back"));
+      } else if (btnId.search("remove") == 0) {
+        $("li:last").removeClass("big back");
+      } else {
+        $("li:last").toggleClass("big back");
+      }
+    });
+  </script>
+</html>

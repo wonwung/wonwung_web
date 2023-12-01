@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04-fade</title>
+  </head>
+  <style>
+    * {
+      font-size: 32px;
+    }
+    div {
+      width: 200px;
+      height: 200px;
+      display: none;
+    }
+    #div1 {
+      background-color: aqua;
+    }
+    #div2 {
+      background-color: yellow;
+    }
+    #div3 {
+      background-color: pink;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <body>
+    <p>
+      FadeIn 버튼을 누르면 요소가 나타나고, FadeOut 버튼을 누르면 요소가
+      사라집니다.
+    </p>
+    <button id="in">FadeIn</button>
+    <button id="out">FadeOut</button>
+    <button id="toggle">FadeToggle</button>
+    <button id="to">FadeTo</button>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+  </body>
+  <script>
+    $("#in").on("click", function () {
+      $("#div1").fadeIn();
+      $("#div2").fadeIn("slow");
+      $("#div3").fadeIn(3000);
+    });
+
+    $("#out").on("click", function () {
+      $("#div1").fadeOut();
+      $("#div2").fadeOut("slow");
+      $("#div3").fadeOut(3000);
+    });
+
+    $("#toggle").on("click", function () {
+      $("#div1").fadeToggle(1000);
+      $("#div2").fadeToggle(2000);
+      $("#div3").fadeToggle(3000);
+    });
+
+    $("#to").on("click", function () {
+      $("#div1").fadeTo(1000, 0.15).slideUp();
+      $("#div2").fadeTo(2000, 0.4).slideUp();
+      $("#div3").fadeTo(3000, 0.7).slideUp();
+    });
+  </script>
+</html>

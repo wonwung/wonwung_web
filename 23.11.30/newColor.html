@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>newColor</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="stylesheet" href="resources/css/new.css" />
+  </head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="header-heading">새 컬러 등록하기</h1>
+        <a class="cancel" href="javascript:history.go(-1)">
+          <img class="cancel-icon" src="resources/img/x.svg" />
+        </a>
+      </div>
+      <div class="section">
+        <h2 class="section-heading">MBTI</h2>
+        <div class="mbti-options">
+          <div class="mbti-option">
+            <span class="mbti-char">E</span>
+            외향형
+          </div>
+          <div class="mbti-option selected">
+            <span class="mbti-char">I</span>
+            내향형
+          </div>
+        </div>
+        <div class="mbti-options">
+          <div class="mbti-option">
+            <span class="mbti-char">S</span>
+            감각형
+          </div>
+          <div class="mbti-option">
+            <span class="mbti-char">N</span>
+            직관형
+          </div>
+        </div>
+        <div class="mbti-options">
+          <div class="mbti-option">
+            <span class="mbti-char">T</span>
+            사고형
+          </div>
+          <div class="mbti-option">
+            <span class="mbti-char">F</span>
+            감정형
+          </div>
+        </div>
+        <div class="mbti-options">
+          <div class="mbti-option">
+            <span class="mbti-char">J</span>
+            판단형
+          </div>
+          <div class="mbti-option">
+            <span class="mbti-char">P</span>
+            인식형
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-heading">
+          컬러
+          <button class="random" type="button">
+            <img class="repeat-icon" src="resources/img/repeat.svg" />
+          </button>
+        </h2>
+        <div class="color-input-container">
+          <input class="color-input" type="text" value="#9441FF" />
+          <span
+            class="color-input-chip"
+            style="background-color: #9441ff"
+          ></span>
+        </div>
+      </div>
+      <button class="submit">컬러등록</button>
+    </div>
+  </body>
+  <script>
+    // 자바스크립트
+    // const colorInput = document.querySelector(`.color-input`);
+    // colorInput.addEventListener("change", function () {
+    //   const colorVal = colorInput.value;
+    //   if (colorVal.length == 7) {
+    //     const colorChip = document.querySelector(".color-input-chip");
+    //     colorChip.style.backgroundColor = colorVal;
+    //   }
+    // });
+
+    // jQuery
+    $(`.color-input`).on(`change`, function () {
+      const colorVal = $(this).val();
+      if (colorVal.length == 7) {
+        $(".color-input-chip").css("backgroundColor", colorVal);
+      }
+    });
+  </script>
+</html>

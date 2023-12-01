@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03-bubblingExample</title>
+  </head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <style>
+    div {
+      border: 3px solid orange;
+    }
+  </style>
+  <body>
+    <div>
+      <p>무궁화 꽃이 피었습니다</p>
+    </div>
+
+    <p id="pTag">은주는 예쁘다~~</p>
+
+    <div>
+      <p>사뿐히 즈려밟고 가시옵소서</p>
+    </div>
+  </body>
+  <script>
+    // $("div").on("click", function (e) {
+    //   const pTag = e.target;
+    //   if (this != pTag) {
+    //     // div 눌렀을 때 : this == div, pTag == div
+    //     // p   눌렀을 때 : this == div, pTag == p
+    //     const txt = $(pTag).html();
+    //     $(this).append(`<p style="color: red;">${txt}</p>`);
+    //   }
+    // });
+
+    $("div").on("click", "p", function () {
+      const parent = $(this).parent("div");
+      const txt = $(this).html();
+      $(parent).append(`<p style="color: red;">${txt}</p>`);
+    });
+  </script>
+</html>
