@@ -17,6 +17,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  background-image: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0) 100%);
 }
 
 .wrap {
