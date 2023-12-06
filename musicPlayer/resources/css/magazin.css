@@ -182,6 +182,67 @@ section {
   font-size: 24px;
 }
 
-.up {
-  color: red;
+.chart-change {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.chart-change.up {
+  color: #d93045;
+}
+
+.charts-title {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.chart-artist {
+  font-weight: 500;
+  font-size: 24px;
+  color: #868686;
+}
+
+@media screen and (max-width: 780px) {
+  .playlist {
+    flex-basis: 30%;
+  }
+
+  .chart-cover {
+    width: 130px;
+    height: 130px;
+  }
+
+  .charts-title {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .artist-name {
+    font-size: 17px;
+    margin: 15px 0 0;
+  }
+
+  .stations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .playlist {
+    flex-basis: 45%;
+  }
+
+  .charts-title {
+    font-size: 18px;
+  }
+
+  .chart-number {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .chart-change {
+    font-size: 12px;
+  }
 }
