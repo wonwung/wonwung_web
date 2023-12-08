@@ -48,6 +48,11 @@ body {
   color: white;
 }
 
+main {
+  margin-left: 240px;
+  margin-bottom: 130px;
+}
+
 section {
   max-width: 1120px;
   width: 100%;
@@ -292,12 +297,24 @@ section {
   height: 100%;
 }
 
+.player {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
 .player-main {
   background-color: rgba(48, 48, 55, 0.7);
   display: flex;
+  flex: 1 0;
   align-items: center;
   justify-content: space-between;
   padding: 16px 40px;
+  backdrop-filter: blur(15px);
 }
 .info {
   display: flex;

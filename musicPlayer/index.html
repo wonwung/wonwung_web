@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <div class="wrap">DW Music</div>
+      <div class="wrap"><span>DW Music</span></div>
     </header>
     <section class="hero">
       <video
@@ -110,4 +110,10 @@
       </div>
     </section>
   </body>
+  <script>
+     const musicPlayer = document.querySelector("header .wrap > span");
+    musicPlayer.addEventListener("click", function () {
+      location.href = "musicPlayer copy.html";
+    });
+  </script>
 </html>

@@ -17,7 +17,7 @@
     <div class="sidebar">
       <p style="color: #fff"><span style="color: #7000ff">DW</span> Music</p>
       <ul class="menu-items">
-        <li class="menu-item">
+        <li class="menu-item" onclick="moveToHome()">
           <img src="resources/img/icon_home.svg" width="14" height="14" /> 뮤직
           홈
         </li>
@@ -354,4 +354,21 @@
       </div>
     </div>
   </body>
+  <script>
+    const menuItem = document.querySelectorAll(".menu-item");
+    console.log(menuItem);
+    menuItem.forEach(function (el, idx) {
+      el.addEventListener("click", function () {
+        if (idx === 0) {
+          location.href = "index.html";
+        } else if (idx === 1) {
+        }
+      });
+    });
+
+    const musicPlayer = document.querySelector("header .wrap > span");
+    musicPlayer.addEventListener("click", function () {
+      location.href = "musicPlayer copy.html";
+    });
+  </script>
 </html>
