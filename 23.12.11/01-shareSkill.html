@@ -14,12 +14,11 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">shareSkill</a>
+        <a class="navbar-brand" href="#">ShareSkill</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -44,7 +43,6 @@
         </div>
       </div>
     </nav>
-    <!-- 네브 끝 -->
     <!-- 캐러셀 시작 -->
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
@@ -75,7 +73,7 @@
           <div class="carousel-caption d-none d-md-block intro">
             <h2>음악을 배워보세요</h2>
             <h3>멋진 뮤지션들이 주변에 있습니다.</h3>
-            <a href="#">수업찾기</a>
+            <a href="#">수업 찾기</a>
           </div>
         </div>
         <div class="carousel-item">
@@ -83,7 +81,7 @@
           <div class="carousel-caption d-none d-md-block intro">
             <h2>메이크업을 배워보세요</h2>
             <h3>멋진 메이크업 아티스트들이 주변에 있습니다.</h3>
-            <a href="#">수업찾기</a>
+            <a href="#">수업 찾기</a>
           </div>
         </div>
         <div class="carousel-item">
@@ -91,7 +89,7 @@
           <div class="carousel-caption d-none d-md-block intro">
             <h2>요리를 배워보세요</h2>
             <h3>멋진 요리사들이 주변에 있습니다.</h3>
-            <a href="#">수업찾기</a>
+            <a href="#">수업 찾기</a>
           </div>
         </div>
       </div>
@@ -117,75 +115,50 @@
     <!-- 캐러셀 끝 -->
     <div class="container">
       <!-- 튜터 모집 alert 시작 -->
-      <div class="row">
-        <div class="col-12">
-          <div
-            class="alert alert-warning alert-dismissible fade show"
-            role="alert"
-          >
-            <strong>튜터 모집!</strong> 재능을 나누어보아요.
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Close"
-            ></button>
-          </div>
-        </div>
-      </div>
+      <div class="row"></div>
       <!-- 튜터 모집 alert 끝 -->
       <!-- 수업 목록 시작 -->
-      <div class="row">
-        <div class="col-xl-3">
-          <a href="#" class="course">
-            <img src="../resources/img/course1.jpg" class="course-img" />
-            <div class="info">
-              <h4>개성있는 일러스트 작품 만들기</h4>
-              <div class="lecture">
-                <img src="../resources/img/user.png" />
-                <span class="name">김원웅</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-xl-3">
-          <a href="#" class="course">
-            <img src="../resources/img/course2.jpg" class="course-img" />
-            <div class="info">
-              <h4>개성있는 일러스트 작품 만들기</h4>
-              <div class="lecture">
-                <img src="../resources/img/user.png" />
-                <span class="name">김원웅</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-xl-3">
-          <a href="#" class="course">
-            <img src="../resources/img/course3.jpg" class="course-img" />
-            <div class="info">
-              <h4>개성있는 일러스트 작품 만들기</h4>
-              <div class="lecture">
-                <img src="../resources/img/user.png" />
-                <span class="name">김원웅</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-xl-3">
-          <a href="#" class="course">
-            <img src="../resources/img/course4.jpg" class="course-img" />
-            <div class="info">
-              <h4>개성있는 일러스트 작품 만들기</h4>
-              <div class="lecture">
-                <img src="../resources/img/user.png" />
-                <span class="name">김원웅</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- 수업 목록 시작 -->
+      <div class="row" id="courseList"></div>
+      <!-- 수업 목록 끝 -->
     </div>
   </body>
+  <script>
+    const dumyData = [
+      { courseImgName: "course1", courseName: "개성있는 일러스트 작품 만들기" },
+      { courseImgName: "course2", courseName: "내가 만드는 나만의 악세서리" },
+      { courseImgName: "course3", courseName: "내 이야기를 노래로!" },
+      { courseImgName: "course4", courseName: "비전공자를 위한 웹 프로그래밍" },
+      { courseImgName: "course5", courseName: "자신감 업! 메이크업 클래스" },
+      { courseImgName: "course6", courseName: "아이돌 댄스 정복하기" },
+      {
+        courseImgName: "course7",
+        courseName: "사진 작가에게 배우는 야외 사진",
+      },
+      { courseImgName: "course8", courseName: "기본부터 익히는 플라워 클래스" },
+    ];
+
+    function getCourse() {
+      const courseList = document.getElementById("courseList");
+      dumyData.forEach(function (v) {
+        courseList.insertAdjacentHTML(
+          "beforeend",
+          `
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <a href="#" class="course">
+            <img src="../resources/img/${v.courseImgName}.jpg" class="course-img" />
+            <div class="info">
+              <h4>${v.courseName}</h4>
+              <div class="lecture">
+                <img src="../resources/img/user.png" />
+                <span class="name">김원웅</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        `
+        );
+      });
+    }
+    getCourse();
+  </script>
 </html>
