@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: pretendard;
+    word-break: keep-all;
+    font-size: 16px;
+  }
+
+body {
+    width: 100%;
+    margin: 0;
+    background-image: url("../img/Dokdo.jpg");
+    color: #d9d9d9;
+    background-size: 110%;
+}
+.navbar-brand{
+    display: flex;
+    justify-content: left;
+}
+.navb {
+display: flex;
+justify-content: space-between;
+align-items: center;
+    border-bottom: 1px solid #ffffff26;
+    height: 100px;
+}
+
+.mb-lg-0 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+li .nav-item {
+border: 1px solid red;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center-text {
+    padding: 50px 0 90px;
+}
+
+.dokdo-img {
+   
+    width: 480px;
+    height: 230px;
+}
+
+.content-center {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.preve-before {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color:  #000;
+    opacity: .15;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.center-button {
+    margin: 60px 0;
+}
