@@ -10,11 +10,16 @@ html {
 
 body {
     width: 100%;
+    height: 100%;
     margin: 0;
+}
+
+.wrap {
     background-image: url("../img/Dokdo.jpg");
-    color: #d9d9d9;
+    height: 100%;
     background-size: 110%;
 }
+
 .navbar-brand{
     display: flex;
     justify-content: left;
@@ -42,10 +47,12 @@ align-items: center;
 
 
 .content {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  
 }
 
 .center-text {
@@ -99,3 +106,53 @@ align-items: center;
     align-items: center;
     justify-content: center;
 } */
+
+.animate-content {
+    padding: 100px;
+    width: 700px;
+    height: 450px;
+    border-radius: 30px;
+    background-color: #f8f8f8;
+}
+
+.area-info {
+    padding: 120px;
+}
+
+.dokdo-animate {
+ display: flex;
+ 
+ justify-content: center;
+}
+
+.area-info2 {
+    padding: 100px;
+    width: 700px;
+    height: 450px;
+}
+
+li {
+    display: flex;
+}
+
+strong {
+    padding: 0 40px 0 0;
+}
+
+.photos {
+    display: flex;
+    align-items: center;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    background-color:grey;
+    margin: 20px;
+}
+
+.article-area {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
