@@ -20,6 +20,7 @@ body {
   height: 100%;
   width: 100%;
 }
+
 .navb {
   display: flex;
   justify-content: center;
@@ -31,6 +32,18 @@ body {
   top: 0;
   left: 0;
   right: 0;
+}
+
+.navbar-text {
+  position: relative;
+  right: 300px;
+}
+
+.navbar,
+.navbar-expand-lg {
+  width: 100%;
+  position: relative;
+  left: 50px;
 }
 
 .header {
@@ -48,10 +61,20 @@ body {
   top: 30%;
 }
 
-.center-text {
-  font-size: 50px;
+.nav-link {
+  color: #fff;
+  font-size: 16px;
 }
 
+.center-text {
+  font-size: 60px;
+  font-weight: 1000;
+}
+
+.center-p {
+  margin: 0;
+  font-size: 20px;
+}
 .menu-bar {
   width: 80%;
   height: 100px;
@@ -82,7 +105,7 @@ body {
   position: relative;
   left: 50%;
   bottom: 300px;
-  text-align: justify;
+  /* text-align: justify; */
   font-weight: 500;
   width: 800px;
 }
@@ -101,10 +124,16 @@ h2 {
   margin-bottom: 50px;
 }
 
-p {
-  text-align: justify;
+.content-p {
+  margin: 0;
+  /* text-align: justify; */
 }
-.conten2-text {
+
+.content2 {
+  height: 700px;
+}
+
+.content2-text {
   position: relative;
   left: 10%;
   top: 100px;
@@ -132,17 +161,18 @@ p {
   font-size: 32px;
   color: #fff;
   display: flex;
+  justify-content: center;
   position: relative;
-  top: 250px;
-  left: 750px;
+  top: 200px;
 }
 
 .text-img {
   width: 200px;
   height: 80px;
-  position: absolute;
+  position: relative;
   bottom: 450px;
   left: 850px;
+  top: 170px;
 }
 
 .footer-inn {
@@ -151,6 +181,7 @@ p {
   height: 200px;
   display: flex;
   align-items: center;
+  padding: 30px;
 }
 .footer-adress {
   z-index: 2;
