@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navebar</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: pretendard;
+      word-break: keep-all;
+      font-size: 16px;
+      background-color: #d9d9d9;
+    }
+
+    body {
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    .nav {
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+      background-color: blanchedalmond;
+    }
+
+    .nav-img {
+      background-color: #099784;
+      color: black;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      list-style: none;
+      gap: 50px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 550;
+    }
+
+    .line {
+      border-bottom: 2px solid #099784;
+    }
+
+    .menu-list {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .list-a {
+      text-decoration: none;
+    }
+
+    .nav-end {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* margin: 0 200px 0 0; */
+    }
+
+    .end-text {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 3px;
+      text-decoration: none;
+    }
+
+    .nav-btn {
+      width: 30px;
+      height: 100px;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+      margin: 0 10px;
+      display: none;
+    }
+
+    .btn-line {
+      width: 30px;
+      height: 3px;
+      background-color: #fff;
+    }
+  </style>
+  <body>
+    <div id="navbar" class="nav">
+      <div class="nav-img"><img src="../resources/Img/blob (1).jpg" /></div>
+      <ul class="nav-menu">
+        <li class="menu-list line">
+          <a class="list-a" href="#">전시관 소개</a>
+        </li>
+        <li class="menu-list"><a class="list-a" href="#">관람 정보</a></li>
+        <li class="menu-list">
+          <a class="list-a" href="#">전시관 안내</a>
+        </li>
+        <li class="menu-list">
+          <a class="list-a" href="#">독도 자료실</a>
+        </li>
+        <li class="menu-list"><a class="list-a" href="#">열린광장</a></li>
+      </ul>
+      <div class="nav-end">
+        <a class="end-text" href="#">로그인</a>
+        <a class="end-text" href="#">· 회원가입</a>
+
+        <a class="nav-btn" href="#">
+          <span class="btn-line"></span>
+          <span class="btn-line"></span>
+          <span class="btn-line"></span>
+        </a>
+      </div>
+      <div class="nev-border"></div>
+    </div>
+  </body>
+</html>
