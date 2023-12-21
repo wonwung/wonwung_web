@@ -146,8 +146,28 @@
 
   <script>
     const navbar = document.getElementById("navbar");
-    navbar.addEventListener("click", function () {
-      alert("이벤트");
+    window.addEventListener("scroll", function () {
+      const screenWidth = screen.width;
+      const screenHeight = screen.height;
+
+      // Get the browser window size
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+
+      // Get the size of the entire webpage
+      const pageWidth = document.documentElement.scrollWidth;
+      const pageHeight = document.documentElement.scrollHeight;
+
+      // console.log(screenWidth, screenHeight);
+      // console.log(windowWidth, windowHeight);
+      // console.log(pageWidth, pageHeight);
+      // navbar.style.backgroundColor = "white";
+      const pageY = window.pageYOffset;
+      if (pageY > 0) {
+        navbar.style.backgroundColor = "white";
+      } else {
+        navbar.style.backgroundColor = "transparent";
+      }
     });
   </script>
 </html>
