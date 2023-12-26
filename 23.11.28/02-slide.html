@@ -27,15 +27,16 @@
     <br /><br /><br /><br /><br /><br /><br /><br />
     <div id="flip">여기를 클릭하세요!!</div>
     <div id="panel">Hello, jQuery!!</div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </body>
   <script>
-    $("#flip").on("click", function () {
-      //   $("#panel").slideDown(5000); // 밀리세컨즈
+    $("#flip").on("scroll", function () {
+      $("#panel").slideDown(5000); // 밀리세컨즈
       //   $("#panel").slideUp(5000); // 밀리세컨즈
-      $("#panel").slideToggle(3000); // 밀리세컨즈
+      // $("#panel").slideToggle(3000); // 밀리세컨즈
     });
 
-    $("#stop").on("click", function () {
+    $("#stop").on("scroll", function () {
       $("#panel").stop();
     });
   </script>

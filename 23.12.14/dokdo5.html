@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dokdo4</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../resources/css/dokdo5.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div id="navbar" class="nav">
+        <div class="nav-img"><img src="../resources/Img/blob (1).jpg" /></div>
+        <ul class="nav-menu">
+          <li class="menu-list">
+            <a class="list-a" href="#">전시관 소개</a>
+          </li>
+          <li class="menu-list line">
+            <a class="list-a" href="#">관람 정보</a>
+          </li>
+          <li class="menu-list">
+            <a class="list-a" href="#">전시관 안내</a>
+          </li>
+          <li class="menu-list">
+            <a class="list-a" href="#">독도 자료실</a>
+          </li>
+          <li class="menu-list"><a class="list-a" href="#">열린광장</a></li>
+        </ul>
+        <div id="navend" class="nav-end">
+          <a id="navend" class="end-text" href="#">로그인</a>
+          <a class="end-text" href="#">· 회원가입</a>
+
+          <a class="nav-btn" href="#">
+            <span class="btn-line"></span>
+            <span class="btn-line"></span>
+            <span class="btn-line"></span>
+          </a>
+        </div>
+        <div class="nev-border"></div>
+      </div>
+      <div class="header-center">
+        <h1 class="center-top">관람안내</h1>
+        <div>대한민국 독도, 세종에서 만나다!</div>
+      </div>
+      <div class="header-footer">
+        <ul class="headFoot-text">
+          <li>
+            <a class="text-round" href="#"></a>
+            <a class="text-list" href="#">관람안내</a>
+          </li>
+          <li>
+            <a class="text-list" href="#">단체예약</a>
+          </li>
+          <li>
+            <a class="text-list" href="#">예약확인·취소</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="content">
+        <img src="../resources/Img/img_preview.jpg" />
+        <div class="content-text">
+          <ul class="content-ul">
+            <li class="content-li">
+              <d class="li-d">관람시간</d>
+              <p class="li-p">
+                매주 화-토 9:00 ~ 17:00<br />
+                (점심시간 12:00~13:00, 입장마감 16:30)<br />
+              </p>
+              ※ 관람시간은 새롬고등학교 사정에 따라 변경될 수 있습니다.
+            </li>
+            <li class="content-li">
+              <d class="li-d">휴관일</d>
+              <p>일요일, 월요일 및 공휴일</p>
+            </li>
+            <li class="content-li">
+              <d class="li-d">관람요금</d>
+              <p>무료</p>
+            </li>
+            <li class="content-li">
+              <d class="li-d">문의처</d>
+              <p>044-999-6393 (단체관람 유선 협의)</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content-foot">
+        <div class="foot-text">관람시 주의사항</div>
+        <ul>
+          <li class="foot-li">
+            음식물 반입과 안내견 이외의 애완동물 출입이 금지되어 있습니다.
+          </li>
+          <li class="foot-li">
+            플래쉬/삼각대 등을 이용한 촬영과 상업 목적의 촬영이 금지되어
+            있습니다.
+          </li>
+          <li class="foot-li">
+            전시물이 손상되지 않도록 손으로 만지는 행동을 자제해 주세요.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-img">
+        <img class="text-img" src="../resources/Img/blob2.jpg" />
+        <div class="footer-text">“ 경상북도 울릉읍 독도리 1-96 ”</div>
+      </div>
+      <div class="footer-inn">
+        <div class="footer-adress">
+          <ul class="footer-ul">
+            <li><a class="footer-a" href="#">이용약관</a></li>
+            <li><a class="footer-a" href="#">· 개인정보취급방침</a></li>
+            <li><a class="footer-a" href="#">· 이메일주소무단수집거부</a></li>
+          </ul>
+          <ul class="footer-ul">
+            <li>
+              <a class="footer-a" href="#"
+                >주소. (30126) 세종특별자치시 새롬서로 68 새롬고등학교 1층
+                독도전시관</a
+              >
+            </li>
+            <li><a class="footer-a" href="#"> 문의전화. 044-999-6393</a></li>
+          </ul>
+          <p class="footer-p">© 2022 Dokdo Exhibitonon All rights reserved .</p>
+        </div>
+        <a href="#" class="footer-btn">단체예약<br />신청</a>
+        <a href="#" class="footer-btn2">독도 전시관<br />오시는길</a>
+      </div>
+    </div>
+  </body>
+  <script>
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", function () {
+      const screenWidth = screen.width;
+      const screenHeight = screen.height;
+
+      // Get the browser window size
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+
+      // Get the size of the entire webpage
+      const pageWidth = document.documentElement.scrollWidth;
+      const pageHeight = document.documentElement.scrollHeight;
+
+      // console.log(screenWidth, screenHeight);
+      // console.log(windowWidth, windowHeight);
+      // console.log(pageWidth, pageHeight);
+      // navbar.style.backgroundColor = "white";
+      const pageY = window.pageYOffset;
+      if (pageY > 0) {
+        navbar.style.cssText = "height: 80px; background-color:#09847f";
+      } else {
+        navbar.style.cssText = "background-color:transparent; height: 100px";
+      }
+    });
+  </script>
+</html>
