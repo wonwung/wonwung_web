@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>continue</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let msg = ``;
+    for(let i = 0; i < 10; i++){
+    if(i == 3) {
+        continue
+    }
+    msg += i+`<br>`
+}
+document.write(`${msg}`)
+document.write(`<hr>`)
+
+let sum = 0;
+for(let i = 1; i <=10; i++){
+sum += i;
+}
+document.write(`1~10까지의 합은 ${sum}`)
+document.write(`<hr>`)
+document.write(`<h1>1부터 200까지의 짝수의 합을 구하시오</h1>`)
+let  even = 0;
+for(let i = 1; i <= 200; i++){
+if (i % 2 == 1) {
+        even += i;
+      }
+    }
+    document.write(`<h1> 짝수들의 합${even}<h1>`);
+        document.write(`<hr>`)
+        
+</script>
+</html>

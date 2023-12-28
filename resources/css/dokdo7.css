@@ -192,7 +192,7 @@ body {
   margin: 100px 30px;
   width: 640px;
   height: 670px;
-  border: 1px solid black;
+  border: 1px solid #dddddd;
   padding: 50px 50px;
 }
 
@@ -220,9 +220,38 @@ body {
 .center-text2 {
   margin-top: 50px;
   padding: 50px 0 0 0;
-  border-top: 1px solid #444444;
+  border-top: 1px solid #ddd;
   border-top-style: dashed;
   display: flex;
+}
+.center-input {
+  padding: 50px 0 0 0;
+  display: flex;
+}
+
+.input1,
+.input2 {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  width: 350px;
+}
+
+.input2 {
+  
+  margin-top: 50px;
+}
+
+.input-submit {
+  position: relative;
+  left: 370px;
+  bottom: 150px;
+  font-weight: 550;
+  background-color: #09847f;
+  color: #fff;
+  border: 0;
+  border-radius: 0 0 40px 0;
+  width: 150px;
+  height: 100px;
 }
 
 .footer {
