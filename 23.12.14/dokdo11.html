@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dokdo9</title>
+    <title>dokdo11</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../resources/css/dokdo9.css" />
+    <link rel="stylesheet" href="../resources/css/dokdo11.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
@@ -50,93 +50,52 @@
       <div class="header-footer">
         <ul class="headFoot-text">
           <li>
-            <a class="text-round" href="#"></a>
             <a class="text-list" href="#">독도현황</a>
           </li>
           <li>
             <a class="text-list" href="#">독도사진</a>
           </li>
           <li>
+            <a class="text-round" href="#"></a>
             <a class="text-list" href="#">교육자료실</a>
           </li>
         </ul>
       </div>
     </div>
-
     <div class="wrap">
-      <div class="content-header">
-        <button class="content-box1">독도의 위치</button>
-        <button class="content-box2">독도의 지형과 지명</button>
-        <button class="content-box3">독도의 생성</button>
+      <div class="content">
+        <form class="content-form">
+          <div class="content-div">
+            <select>
+              <option>전체</option>
+              <option>제목</option>
+            </select>
+          </div>
+          <input
+            class="content-input1"
+            type="text"
+            placeholder="검색어를 입력하세요"
+          />
+          <input class="content-input2" type="submit" value="검색" />
+        </form>
       </div>
-      <h2>독도의 위치 바로알기</h2>
       <div class="content-center">
-        <div class="center-item">
-          <img src="../resources/Img/img_location.jpg" />
-        </div>
-        <div class="center-text">
-          <ul class="center-ul">
-            <li class="center-li">
-              <strong class="center-li text">수리적 위치</strong>
-              <p class="center-p">
-                <span class="center-span">- 동도 </span>: 북 37도 14분 26.8초,
-                동경 131도 52분 10.4초
-              </p>
-              <p class="center-p">
-                <span class="center-span">- 서도 </span>: 북위 37도 14분 30.6초,
-                동경 131도 51분 54.6초
-              </p>
-            </li>
-            <li class="center-li">
-              <strong class="center-li text">지리적 위치</strong>
-              <p class="center-p">
-                - 경북 울진군 죽변에서 동쪽으로 216.8km(117.1 해리)
-              </p>
-              <p class="center-p">- 울릉도에서 동남쪽으로 87.4km(47.2 해리)</p>
-              <p class="center-p">
-                - 일본 시마네현 오키섬에서는 157.5km(85.0 해리)
-              </p>
-              <p class="center-p">※ 해리(海里) = 1.852km</p>
-              <p class="center-p">
-                ※ 울릉도에서 독도까지의 거리는 오키섬에서 독도까지의 거리보다 약
-                1.8km 가깝다.
-              </p>
-            </li>
-            <li class="center-li">
-              <strong class="center-li text">행정적 위치</strong>
-              <p class="center-p2">
-                경상북도 울릉군 울릉읍 독도리 1~96(우:40240)
-              </p>
-              <div class="center-li div">
-                <span class="center-span">동도</span>
-                <ul class="center-ul2">
-                  <li class="center-li2">
-                    <span class="center-span">- 독도경비대</span> : 경상북도
-                    울릉군 울릉읍 독도이사부길 55
-                  </li>
-                  <li class="center-li2">
-                    <span class="center-span">- 독도등대</span> : 경상북도
-                    울릉군 울릉읍 독도이사부실 63
-                  </li>
-                </ul>
-              </div>
-
-              <hr />
-              <div class="center-li div">
-                <span class="center-span">서도</span>
-                <ul class="center-ul2">
-                  <li class="center-li2">
-                    <span class="center-span">- 주민숙소</span> : 경상북도
-                    울릉군 울릉읍 독도안용복길 3
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
+        <table>
+          <tr>
+            <th style="width: 7%">No.</th>
+            <th class="table-th">제목</th>
+            <th style="width: 15%">작성자</th>
+            <th style="width: 15%">작성일</th>
+          </tr>
+          <tr style="border-top: 1px solid black">
+            <td>1</td>
+            <td class="table-th">독도전시관 체험학습지 정답</td>
+            <td>관리자</td>
+            <td>2023-03-10</td>
+          </tr>
+        </table>
       </div>
     </div>
-
     <div class="footer">
       <div class="footer-img">
         <img class="text-img" src="../resources/Img/blob2.jpg" />
