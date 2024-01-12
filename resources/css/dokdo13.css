@@ -54,7 +54,7 @@ body {
 }
 
 .line {
-  border-bottom: 4px solid #099784;
+  border-bottom: 2px solid #099784;
 }
 
 .menu-list {
@@ -210,18 +210,37 @@ body {
 }
 
 .content-lists {
-  width: 70%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
 .content-list {
+  text-decoration: none;
+}
+
+.content-list .text {
+  margin-top: 25px;
+  color: black;
+}
+
+.content-list .text > p {
+  color: #999999;
+  font-weight: 550;
+}
+
+.content-list .text > span {
+  font-size: 21px;
+  font-weight: 550;
+  letter-spacing: -2px;
 }
 
 .content-pagination {
   display: flex;
   justify-content: center;
-  margin-bottom: 130px;
+  margin: 70px 0 130px 0;
 }
 
 .pagination-a {

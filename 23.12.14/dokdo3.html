@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dokdo3</title>
+    <title>전시관소개_전시관연혁</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,12 +17,12 @@
       <div id="navbar" class="nav">
         <div class="nav-img"><img src="../resources/Img/blob (1).jpg" /></div>
         <ul class="nav-menu">
-          <li class="menu-list line">
+          <li id="border" class="menu-list line">
             <a class="list-a" href="#">전시관 소개</a>
           </li>
           <li class="menu-list"><a class="list-a" href="#">관람 정보</a></li>
           <li class="menu-list">
-            <a class="list-a" href="#">전시관 안내</a>
+            <a class="list-a" href="#">전시 안내</a>
           </li>
           <li class="menu-list">
             <a class="list-a" href="#">독도 자료실</a>
@@ -141,11 +141,38 @@
         </div>
       </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+      <div class="footer-img">
+        <img class="text-img" src="../resources/Img/blob2.jpg" />
+        <div class="footer-text">“ 경상북도 울릉읍 독도리 1-96 ”</div>
+      </div>
+      <div class="footer-inn">
+        <div class="footer-adress">
+          <ul class="footer-ul">
+            <li><a class="footer-a" href="#">이용약관</a></li>
+            <li><a class="footer-a" href="#">· 개인정보취급방침</a></li>
+            <li><a class="footer-a" href="#">· 이메일주소무단수집거부</a></li>
+          </ul>
+          <ul class="footer-ul">
+            <li>
+              <a class="footer-a" href="#"
+                >주소. (30126) 세종특별자치시 새롬서로 68 새롬고등학교 1층
+                독도전시관</a
+              >
+            </li>
+            <li><a class="footer-a" href="#"> 문의전화. 044-999-6393</a></li>
+          </ul>
+          <p class="footer-p">© 2022 Dokdo Exhibitonon All rights reserved .</p>
+        </div>
+        <a href="#" class="footer-btn">단체예약<br />신청</a>
+        <a href="#" class="footer-btn2">독도 전시관<br />오시는길</a>
+      </div>
+    </div>
   </body>
 
   <script>
     const navbar = document.getElementById("navbar");
+    const navborder = document.getElementById("border");
     window.addEventListener("scroll", function () {
       const screenWidth = screen.width;
       const screenHeight = screen.height;
@@ -164,9 +191,11 @@
       // navbar.style.backgroundColor = "white";
       const pageY = window.pageYOffset;
       if (pageY > 0) {
-        navbar.style.backgroundColor = "white";
+        navbar.style.cssText = "height: 80px; background-color:#09847f";
+        border.style.cssText = "border-bottom: 3px solid #fff";
       } else {
-        navbar.style.backgroundColor = "transparent";
+        navbar.style.cssText = "background-color:transparent; height: 100px";
+        border.style.cssText = "border-bottom: 3px solid #09847f";
       }
     });
   </script>
