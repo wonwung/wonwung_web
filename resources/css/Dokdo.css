@@ -6,6 +6,8 @@ html {
   font-family: pretendard;
   word-break: keep-all;
   font-size: 16px;
+  overflow-x: hidden;
+  letter-spacing: -1.5px;
 }
 
 body {
@@ -14,20 +16,89 @@ body {
 }
 
 .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 970px;
+  background-image: url(../Img/Dokdo.jpg);
+  background-size: 100% 100%;
+  border-radius: 0 0 200px 0;
+  margin-bottom: 100px;
+}
+
+.wrap-button {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 140px;
+}
+
+.wrap-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  border: 0;
+  border-radius: 50px;
+  opacity: 0.3;
+}
+
+.btn-center {
+  border: 3px solid #fff;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  width: 200px;
+  height: 70px;
+  border-radius: 50px;
+  background-color: transparent;
+  position: relative;
+  top: 25%;
+}
+
+.btn-cicle {
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  left: 32%;
+  top: 40%;
+  background-color: #09847f;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.wrap-btn > p {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
   margin: 0;
-  padding: 0;
+}
+
+.wrap > div > p {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
 }
 
 .bgTextImg {
-  position: absolute;
-  left: 37%;
-  top: 22%;
   width: 480px;
   height: 230px;
+  position: relative;
+  top: 230px;
 }
 
-.bgImg {
-  padding: 0;
+.wrap > div > p {
+  position: relative;
+  top: 280px;
 }
 
 .nav-img {
@@ -103,6 +174,50 @@ body {
 .nev-border {
   width: 100%;
   border-bottom: 1px solid #ffffff26;
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.content1 {
+  background-image: url(../Img/img_dokdo.png);
+  background-color: #f8f8f8;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding: 80px 70px;
+  width: 700px;
+  height: 445px;
+  border-radius: 50px;
+}
+
+.content1 > h3 {
+  font-weight: 700;
+}
+
+.content1 > p {
+  padding: 20px 0 80px 0;
+}
+.content1 > button {
+  border: 3px solid #09847f;
+  color: #09847f;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 50px;
+  width: 175px;
+  height: 60px;
+}
+
+.content2 > div {
+  padding: 10px 0;
+  display: flex;
+  border-bottom: 1px dotted #999999;
+}
+
+.content2 > div > h3 {
+  margin: 0 20px;
 }
 
 .footer {
