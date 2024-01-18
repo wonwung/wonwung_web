@@ -274,7 +274,7 @@ body {
 
 .content-foot {
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 230px;
 }
 
 .foot-sect {
@@ -370,6 +370,39 @@ body {
   border-radius: 20px;
   border: 1px solid #09847f;
   margin-bottom: 16px;
+}
+
+.footer-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  position: absolute;
+  background-color: #09847f;
+  width: 1400px;
+  height: 235px;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.banner > div {
+  /* width: 1px; */
+  height: 80%;
+  border-right: 0.5px solid #3aaca1;
+  margin: 0 100px;
+}
+
+.banner-left {
+  display: flex;
 }
 
 .footer {
