@@ -395,7 +395,6 @@ body {
 }
 
 .banner > div {
-  /* width: 1px; */
   height: 80%;
   border-right: 0.5px solid #3aaca1;
   margin: 0 100px;
@@ -403,6 +402,14 @@ body {
 
 .banner-left {
   display: flex;
+}
+
+.banner-right {
+  display: flex;
+}
+
+.banner > a > div {
+  margin-right: 60px;
 }
 
 .footer {
