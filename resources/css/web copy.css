@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  word-break: keep-all;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+body {
+  margin: 0;
+}
+
+.wrap {
+  width: 100%;
+  background-color: #d9d9d9;
+}
+
+.container {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header > span {
+  margin-top: 150px;
+  font-weight: 900;
+  font-size: 70px;
+  color: firebrick;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.nav {
+  width: 80%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav > a {
+  height: 70px;
+  background-color: rgb(185, 185, 185);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgba(165, 43, 43, 0.699);
+  /* z-index: 1; */
+}
+
+.nav > p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding-right: 20px;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  color: black;
+}
+
+.nav > a > ul {
+  display: flex;
+  gap: 120px;
+  list-style: none;
+}
+
+.contents {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content1 {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  border-bottom: 2px solid #bbb;
+  padding: 30px 0;
+}
+
+.content-profile > img {
+  width: 300px;
+  height: 350px;
+}
+
+.content-profile > p {
+  margin: 0;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #2423238a;
+  font-size: 60px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.profile-text {
+  margin-top: 60px;
+  line-height: 40px;
+  padding: 30px 20px;
+}
+
+.profile-text > p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.profile-text > ul {
+  margin: 0;
+  padding-left: 10px;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.content2 {
+  width: 60%;
+  display: flex;
+  margin: 30px 0;
+}
+
+.content2-left {
+  /* padding: px 100px; */
+  width: 50%;
+  border-right: 1px solid black;
+}
+
+.content2-left > p {
+  font-size: 50px;
+  font-weight: 800;
+  color: #2423238a;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.content2-right {
+  padding: 0 30px;
+}
+
+.content2-right > p {
+  font-size: 50px;
+  font-weight: 800;
+  color: #2423238a;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.content2-right > div > img {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
