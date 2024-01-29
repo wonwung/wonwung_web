@@ -36,7 +36,7 @@ body {
 }
 
 .nav {
-  width: 80%;
+  width: 60%;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@ body {
 
 .nav > a {
   height: 70px;
-  background-color: rgb(185, 185, 185);
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +55,7 @@ body {
   /* z-index: 1; */
 }
 
-.nav > p {
+.wrap > p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
@@ -63,6 +63,7 @@ body {
   font-weight: lighter;
   letter-spacing: 0.5px;
   color: black;
+  position: fixed;
 }
 
 .nav > a > ul {
