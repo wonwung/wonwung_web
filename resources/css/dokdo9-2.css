@@ -172,8 +172,9 @@ body {
   margin-bottom: 90px;
 }
 
-.content-box {
-  background-color: #fff;
+.content-header > button > a {
+  text-decoration: none;
+  color: black;
 }
 
 .content-box1,
@@ -192,8 +193,7 @@ body {
 }
 
 .content-box3 {
-  border-color: #09847f;
-  color: #09847f;
+  border: 2px solid #09847f;
 }
 
 .content-box2 {
